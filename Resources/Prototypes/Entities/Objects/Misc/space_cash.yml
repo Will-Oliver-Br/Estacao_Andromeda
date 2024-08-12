@@ -59,6 +59,11 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 1
+  # ADT-Economy-Start
+  - type: Currency
+    price:
+      SpaceCash: 1
+  # ADT-Economy-End
 
 - type: material
   id: Credit

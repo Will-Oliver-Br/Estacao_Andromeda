@@ -24,6 +24,8 @@ namespace Content.Client.VendingMachines.UI
 
         private readonly StyleBoxFlat _styleBox = new() { BackgroundColor = new Color(70, 73, 102) };
 
+        public Action<VendingMachineWithdrawMessage>? OnWithdraw; //ADT-Economy
+
         public VendingMachineMenu()
         {
             MinSize = SetSize = new Vector2(250, 150);
@@ -78,9 +80,18 @@ namespace Content.Client.VendingMachines.UI
         /// Populates the list of available items on the vending machine interface
         /// and sets icons based on their prototypes
         /// </summary>
-        public void Populate(List<VendingMachineInventoryEntry> inventory)
+        public void Populate(List<VendingMachineInventoryEntry> inventory, out List<int> filteredInventory, double priceMultiplier, int credits, string? filter = null) //ADT-Economy
         {
-            if (inventory.Count == 0 && VendingContents.Visible)
+            //ADT-Economy-Start
+            CreditsLabel.Text = Loc.GetString("vending-ui-credits-amount", ("credits", credits));
+            WithdrawButton.Disabled = credits == 0;
+            WithdrawButton.OnPressed += _ =>
+            {
+                if (credits == 0)
+                    return;
+                OnWithdraw?.Invoke(new VendingMachineWithdrawMessage());
+            };
+            //ADT-Economy-End
             {
                 SearchBar.Visible = false;
                 VendingContents.Visible = false;
@@ -110,6 +121,7 @@ namespace Content.Client.VendingMachines.UI
 
                 if (!_prototypeManager.TryIndex(entry.ID, out var prototype))
                     continue;
+                var price = (int)(entry.Price * priceMultiplier); //ADT-Economy
 
                 if (!_dummies.TryGetValue(entry.ID, out var dummy))
                 {
@@ -124,6 +136,8 @@ namespace Content.Client.VendingMachines.UI
                     longestEntry = itemText;
 
                 listData.Add(new VendorItemsListData(prototype.ID, itemText, i));
+
+                vendingItem.Text = $" [{price}$] {itemName} [{entry.Amount}]"; //ADT-Economy
             }
 
             VendingContents.PopulateList(listData);

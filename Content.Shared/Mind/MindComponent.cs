@@ -71,6 +71,20 @@ public sealed partial class MindComponent : Component
     [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
     public string? CharacterName { get; set; }
 
+    //ADT-Economy-Start
+    [ViewVariables]
+    public IEnumerable<Memory> AllMemories => Memories;
+
+    public void AddMemory(Memory memory)
+    {
+        if (Memories.Contains(memory))
+        {
+            return;
+        }
+
+        Memories.Add(memory);
+    }
+    //ADT-Economy-End
     /// <summary>
     ///     The time of death for this Mind.
     ///     Can be null - will be null if the Mind is not considered "dead".

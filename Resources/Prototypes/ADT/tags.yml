@@ -1,0 +1,17 @@
+- type: Tag
+  id: ADTMothFriendlyFood
+
+- type: Tag
+  id: Patch
+
+- type: Tag
+  id: Defibrillator
+
+- type: Tag
+  id: ADTLasgunRevolverCell
+
+- type: Tag
+  id: IgnoreBalanceChecks
+
+- type: Tag
+  id: SpaceCash

@@ -20,6 +20,10 @@
     - id: SalvageShuttleConsoleCircuitboard
     - id: AstroNavCartridge
     - id: ClothingOuterHardsuitLuxury
+    # ADT-Economy-Start
+    - id: ADTCommandBudgetCard
+    - id: ADTCommandBudgetPinPaper
+    # ADT-Economy-End
 
 - type: entity
   id: LockerQuarterMasterFilled
