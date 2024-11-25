@@ -52,8 +52,8 @@ namespace Content.Server.VendingMachines
         [Dependency] private readonly StackSystem _stackSystem = default!;
         //ADT-Economy-End
         [Dependency] private readonly UserInterfaceSystem _userInterfaceSystem = default!;
-        [Dependency] private readonly SharedPointLightSystem _light = default!;
         [Dependency] private readonly EmagSystem _emag = default!;
+        [Dependency] private readonly SharedPointLightSystem _light = default!;
 
         private const float WallVendEjectDistanceFromWall = 1f;
         private const double GlobalPriceMultiplier = 2.0; //ADT-Economy
