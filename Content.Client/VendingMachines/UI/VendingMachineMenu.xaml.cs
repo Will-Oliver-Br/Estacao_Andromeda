@@ -238,7 +238,7 @@ namespace Content.Client.VendingMachines.UI
 
             SetSizeAfterUpdate(longestEntry.Length, inventory.Count);
         }
-        #endregion END
+        #endregion
 
         private void SetSizeAfterUpdate(int longestEntryLength, int contentCount)
         {
