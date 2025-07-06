@@ -1,0 +1,17 @@
+marking-UndergarmentTopTanktop = Mike.
+marking-UndergarmentTopBinder = O capô.
+marking-UndergarmentTopBra = Sutiã clássico
+marking-UndergarmentTopSportsbra = Sutiã esportivo
+marking-UndergarmentBottomBoxers = Boxers.
+marking-UndergarmentBottomBriefs = Covardes.
+marking-UndergarmentBottomSatin = Lavandaria.
+marking-UndergarmentTopTanktopVox = Mike.
+marking-UndergarmentTopBinderVox = O capô.
+marking-UndergarmentTopBraVox = Sutiã clássico
+marking-UndergarmentTopSportsbraVox = Sutiã esportivo
+marking-UndergarmentBottomBoxersVox = Boxers.
+marking-UndergarmentBottomBriefsVox = Covardes.
+marking-UndergarmentBottomSatinVox = Lavandaria.
+marking-UndergarmentBottomBoxersReptilian = Boxers.
+marking-UndergarmentBottomBriefsReptilian = Covardes.
+marking-UndergarmentBottomSatinReptilian = Lavandaria.

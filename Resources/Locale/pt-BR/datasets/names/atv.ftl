@@ -1,0 +1,16 @@
+descriptions-atv-dataset-1 = Veículo para todas as superfícies.
+descriptions-atv-dataset-2 = Tráfego contra formigas.
+descriptions-atv-dataset-3 = Vegetais para qualquer ocasião.
+descriptions-atv-dataset-4 = Na verdade, dois veículos.
+descriptions-atv-dataset-5 = Qualquer tipo de variável.
+descriptions-atv-dataset-6 = Veículos de alívio de lesões.
+descriptions-atv-dataset-7 = Um vírus transmitido por algoritmos.
+descriptions-atv-dataset-8 = Uma vaga para uma bebedeira.
+descriptions-atv-dataset-9 = Um vulcão arrancando bunda.
+descriptions-atv-dataset-10 = Televisão sem TV.
+descriptions-atv-dataset-11 = Vagabunda desajeitada.
+descriptions-atv-dataset-12 = Voluntária no mundo da arte e tragédia.
+descriptions-atv-dataset-13 = Vaca automática de taco.
+descriptions-atv-dataset-14 = Outra vista incrível.
+descriptions-atv-dataset-15 = Todas virgens.
+descriptions-atv-dataset-16 = Veículo terrível.

@@ -1,0 +1,9 @@
+item-recall-marked-name = Chamada para { CAPITALIZE($item) }
+item-recall-marked-description = Chamada para { THE($item) } De volta na sua mão.
+item-recall-item-marked = Você desenhou um símbolo mágico { THE($item) }.
+item-recall-item-already-marked = { CAPITALIZE(THE($item)) } Já marcado!
+item-recall-item-mark-empty = Você tem que segurar o objeto em sua mão!
+item-recall-item-summon-self = { CAPITALIZE(THE($item)) } Aparece em sua mão!
+item-recall-item-summon-others = { CAPITALIZE(THE($item)) } Aparece. { THE($name) }!
+item-recall-item-disappear = { CAPITALIZE(THE($item)) } Desaparece!
+item-recall-item-unmark = Você se sente como sua conexão com { THE($item) } Ele quebra.

@@ -1,0 +1,15 @@
+names-regal-rat-kingdom-dataset-1 = Praga.
+names-regal-rat-kingdom-dataset-2 = miasmico
+names-regal-rat-kingdom-dataset-3 = túnel
+names-regal-rat-kingdom-dataset-4 = Blucky
+names-regal-rat-kingdom-dataset-5 = Lixo.
+names-regal-rat-kingdom-dataset-6 = Rato.
+names-regal-rat-kingdom-dataset-7 = Parasita
+names-regal-rat-kingdom-dataset-8 = Queijo.
+names-regal-rat-kingdom-dataset-9 = Mastigando
+names-regal-rat-kingdom-dataset-10 = Grande.
+names-regal-rat-kingdom-dataset-11 = Sujo.
+names-regal-rat-kingdom-dataset-12 = Gutter.
+names-regal-rat-kingdom-dataset-13 = Lixo.
+names-regal-rat-kingdom-dataset-14 = Serviço
+names-regal-rat-kingdom-dataset-15 = Específico.

@@ -1,0 +1,9 @@
+traitor-corporations-dataset-1 = Indústrias CyberSun.
+traitor-corporations-dataset-2 = "Gorlex Marauders"
+traitor-corporations-dataset-3 = MI13.
+traitor-corporations-dataset-4 = Cooperativa Tigre.
+traitor-corporations-dataset-5 = S. E. L. F.
+traitor-corporations-dataset-6 = "Consórcio dos Direitos dos Animais"
+traitor-corporations-dataset-7 = Donk Corporation.
+traitor-corporations-dataset-8 = Corporação Waffle.
+traitor-corporations-dataset-9 = Farmácia Interdyne
