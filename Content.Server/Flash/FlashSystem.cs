@@ -182,40 +182,41 @@ namespace Content.Server.Flash
                 var attempt = new FlashAttemptEvent(target, user, used);
                 RaiseLocalEvent(target, attempt, true);
 
-            if (attempt.Cancelled)
-                return;
-
-            // don't paralyze, slowdown or convert to rev if the target is immune to flashes
-            if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, TimeSpan.FromSeconds(flashDuration / 1000f), true))
-                return;
-
-            if (stunDuration != null)
-            {
-                _stun.TryParalyze(target, stunDuration.Value, true);
-            }
-            else
-            {
-                _stun.TrySlowdown(target, TimeSpan.FromSeconds(flashDuration / 1000f), true,
-                slowTo, slowTo);
-            }
-
-            if (displayPopup && user != null && target != user && Exists(user.Value))
-            {
-                _popup.PopupEntity(Loc.GetString("flash-component-user-blinds-you",
-                    ("user", Identity.Entity(user.Value, EntityManager))), target, target);
-            }
-
-            if (melee)
-            {
-                if (user == null)
+                if (attempt.Cancelled)
                     return;
 
-                if (used == null)
+                // don't paralyze, slowdown or convert to rev if the target is immune to flashes
+                if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, TimeSpan.FromSeconds(flashDuration / 1000f), true))
                     return;
 
-                var ev = new AfterFlashedEvent(target, user, used);
-                RaiseLocalEvent(user.Value, ref ev);
-                RaiseLocalEvent(used.Value, ref ev);
+                if (stunDuration != null)
+                {
+                    _stun.TryParalyze(target, stunDuration.Value, true);
+                }
+                else
+                {
+                    _stun.TrySlowdown(target, TimeSpan.FromSeconds(flashDuration / 1000f), true,
+                    slowTo, slowTo);
+                }
+
+                if (displayPopup && user != null && target != user && Exists(user.Value))
+                {
+                    _popup.PopupEntity(Loc.GetString("flash-component-user-blinds-you",
+                        ("user", Identity.Entity(user.Value, EntityManager))), target, target);
+                }
+
+                if (melee)
+                {
+                    if (user == null)
+                        return;
+
+                    if (used == null)
+                        return;
+
+                    var ev = new AfterFlashedEvent(target, user, used);
+                    RaiseLocalEvent(user.Value, ref ev);
+                    RaiseLocalEvent(used.Value, ref ev);
+                }
             }
         }
 
