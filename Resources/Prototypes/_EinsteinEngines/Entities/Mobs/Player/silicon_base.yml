@@ -41,15 +41,14 @@
     - type: Fixtures
       fixtures:
         fix1:
-          shape:
-            !type:PhysShapeCircle
+          shape: !type:PhysShapeCircle
             radius: 0.35
           density: 185
           restitution: 0.0
           mask:
-          - MobMask
+            - MobMask
           layer:
-          - MobLayer
+            - MobLayer
     - type: Silicon
       entityType: enum.SiliconType.Player
       batteryPowered: false # Needs to also have a battery!
@@ -115,12 +114,14 @@
           sprite: Mobs/Customization/masking_helpers.rsi
           state: female_full
           visible: false
+        # Andromeda - Start
         - map: ["enum.HumanoidVisualLayers.LFoot"]
         - map: ["enum.HumanoidVisualLayers.RFoot"]
-        - map: ["socks"]
         - map: ["underpants"]
         - map: ["undershirt"]
+        - map: ["socks"]
         - map: ["jumpsuit"]
+        # Andromeda - End
         - map: ["enum.HumanoidVisualLayers.LHand"]
         - map: ["enum.HumanoidVisualLayers.RHand"]
         - map: ["enum.HumanoidVisualLayers.Handcuffs"]
@@ -133,9 +134,9 @@
         - map: ["shoes"]
         - map: ["ears"]
         - map: ["outerClothing"]
-        - map: [ "culteyes" ] # funky cult
+        - map: ["culteyes"] # funky cult
           sprite: "_Funkystation/BloodCult/Effects/culteyes.rsi"
-          state: "human"  # TODO make IPC version
+          state: "human" # TODO make IPC version
           shader: unshaded
           visible: false
         - map: ["eyes"]
@@ -155,7 +156,7 @@
           sprite: "Effects/creampie.rsi"
           state: "creampie_human"
           visible: false
-        - map: [ "culthalo" ] # funky cult
+        - map: ["culthalo"] # funky cult
           sprite: "_Funkystation/BloodCult/Effects/halo.rsi"
           state: "halo"
           shader: unshaded
@@ -295,7 +296,7 @@
     - type: BodyEmotes
       soundsId: GeneralBodyEmotes
     - type: DamageVisuals
-      thresholds: [ 10, 20, 30, 50, 70, 100 ]
+      thresholds: [10, 20, 30, 50, 70, 100]
       targetLayers:
         - "enum.HumanoidVisualLayers.Chest"
         - "enum.HumanoidVisualLayers.Head"

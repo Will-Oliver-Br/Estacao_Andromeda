@@ -1,4 +1,4 @@
-﻿- type: inventoryTemplate
+- type: inventoryTemplate
   id: human
   slots:
     - name: shoes
@@ -84,14 +84,14 @@
       stripHidden: true
     - name: suitstorage
       slotTexture: suit_storage
-      slotFlags:   SUITSTORAGE
+      slotFlags: SUITSTORAGE
       slotGroup: MainHotbar
       stripTime: 3
       uiWindowPos: 2,0
       strippingWindowPos: 2,5
       dependsOn: outerClothing
       dependsOnComponents:
-      - type: AllowSuitStorage
+        - type: AllowSuitStorage
       displayName: Suit Storage
     - name: id
       slotTexture: id
@@ -121,3 +121,24 @@
       uiWindowPos: 3,0
       strippingWindowPos: 0,5
       displayName: Back
+    - name: underpants
+      slotTexture: underpants
+      slotFlags: UNDERPANTS
+      stripTime: 8
+      uiWindowPos: 3,1
+      strippingWindowPos: 4,0
+      displayName: Underpants
+    - name: undershirt
+      slotTexture: undershirt
+      slotFlags: UNDERSHIRT
+      stripTime: 8
+      uiWindowPos: 3,2
+      strippingWindowPos: 4,1
+      displayName: Undershirt
+    - name: socks
+      slotTexture: socks
+      slotFlags: SOCKS
+      stripTime: 8
+      uiWindowPos: 3,0
+      strippingWindowPos: 4,2
+      displayName: Socks
