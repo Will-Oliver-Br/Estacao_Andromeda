@@ -130,20 +130,20 @@
       slotTexture: underpants
       slotFlags: UNDERPANTS
       stripTime: 8
-      uiWindowPos: 4,0
+      uiWindowPos: 3,1
       strippingWindowPos: 4,0
       displayName: Underpants
     - name: undershirt
       slotTexture: undershirt
       slotFlags: UNDERSHIRT
       stripTime: 8
-      uiWindowPos: 4,1
+      uiWindowPos: 3,2
       strippingWindowPos: 4,1
       displayName: Undershirt
     - name: socks
       slotTexture: socks
       slotFlags: SOCKS
       stripTime: 8
-      uiWindowPos: 4,2
+      uiWindowPos: 3,0
       strippingWindowPos: 4,2
       displayName: Socks
