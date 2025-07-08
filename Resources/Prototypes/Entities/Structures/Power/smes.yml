@@ -60,11 +60,10 @@
       voltage: High
       node: input
     - type: PowerNetworkBattery
-       # Goobstation - SMES buff
-      maxSupply: 300000
-      maxChargeRate: 10000
-      supplyRampTolerance: 10000
-      supplyRampRate: 2000
+      maxSupply: 750000
+      maxChargeRate: 25000
+      supplyRampTolerance: 25000
+      supplyRampRate: 5000
     - type: PointLight
       radius: 1.5
       energy: 1.6
@@ -105,12 +104,11 @@
 - type: entity
   parent: BaseSMES
   id: SMESBasic
-  suffix: Basic, 16MJ
+  suffix: Basic, 120MW
   components:
   - type: Battery
-     # Goobstation - SMES buff
-    maxCharge: 16000000
-    startingCharge: 16000000
+    maxCharge: 120000000
+    startingCharge: 120000000
 
 - type: entity
   parent: SMESBasic
@@ -123,7 +121,7 @@
 - type: entity
   parent: BaseSMES
   id: SMESAdvanced
-  suffix: Advanced, 32MJ
+  suffix: Advanced, 480MJ
   name: advanced SMES
   description: An even-higher-capacity superconducting magnetic energy storage (SMES) unit.
   components:
