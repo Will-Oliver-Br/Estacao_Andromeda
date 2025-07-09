@@ -3,115 +3,115 @@
   id: AirlockMaintEngi
   name: engineering maintenance access
   components:
-  - type: Sprite
-    sprite: eltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockEngineering
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockEngineering
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintAtmo
   name: atmospherics maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockEngineering
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockEngineering
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintService
   name: service maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockService
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockService
 
 - type: entity
   parent: AirlockMaintService
   id: AirlockMaintHydro
   name: hydroponics maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockService
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockService
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintMed
   name: medical maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockMedical
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockMedical
 
 - type: entity
   parent: AirlockMaintMed
   id: AirlockMaintChem
   name: chemistry maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintRnD
   name: science maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockScience
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockScience
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintSec
   name: security maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockSecurity
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockSecurity
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintArmory
   name: armory maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockArmory
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockArmory
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintCargo
   name: cargo maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockCargo
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockCargo
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintSalvage
   name: salvage maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockCargo
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockCargo
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintCommand
   name: command maintenance access
   components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
-  - type: Wires
-    layoutId: AirlockCommand
+    - type: Sprite
+      sprite: DeltaV/Structures/Doors/Airlocks/Standard/maint.rsi #Delta V - Resprite Doors
+    - type: Wires
+      layoutId: AirlockCommand

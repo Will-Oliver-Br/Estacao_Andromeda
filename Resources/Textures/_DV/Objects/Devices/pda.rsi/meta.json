@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "aPDA retexture by ZweiHawke @ zweihawke.net, added Hygiene Technician, modified interntech, added admin assistant and added the cargo assistant by Radezolid, added Psychiatrist, Therapist, and Social Worker versions by alterae <chell@alterae.online>, surgeon by Janet Blackquill <uhhadd@gmail.com> 2024. Security PDAs modified by TJohnson.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "pda-detective"
+        },
+        {
+            "name": "pda-hos"
+        },
+        {
+            "name": "pda-security"
+        },
+        {
+            "name": "pda-brigmedic"
+        },
+        {
+            "name": "pda-warden"
+        },
+        {
+            "name": "pda-seniorphysician"
+        },
+        {
+            "name": "pda-seniorofficer"
+        },
+        {
+            "name": "pda-corpsman"
+        },
+        {
+            "name": "pda-prisonguard"
+        }
+    ]
+}

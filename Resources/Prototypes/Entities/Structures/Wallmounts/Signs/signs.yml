@@ -50,6 +50,7 @@
   description: A direction sign, pointing out which way the Brig is.
   components:
   - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi # DeltaV - resprite security signs
     state: direction_brig
 
 - type: entity
@@ -212,6 +213,7 @@
   description: A direction sign, pointing out which way Security is.
   components:
   - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi # DeltaV - resprite security signs
     state: direction_sec
 
 - type: entity
@@ -286,6 +288,7 @@
   description: A sign indicating the armory.
   components:
   - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi # DeltaV - resprite security signs
     state: armory
 
 - type: entity
@@ -619,6 +622,7 @@
   description: A sign indicating an interrogation room.
   components:
   - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi # DeltaV - resprite security signs
     state: interrogation
 
 - type: entity
@@ -646,6 +650,7 @@
   description: A sign indicating the presence of the (typically absent) rule of law.
   components:
   - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi # DeltaV - resprite security signs
     state: law
 
 - type: entity
@@ -718,6 +723,7 @@
   description: A sign indicating the prison.
   components:
   - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi # DeltaV - resprite security signs
     state: prison
 
 - type: entity
@@ -1252,6 +1258,7 @@
   description: A sign depicting the security insignia.
   components:
   - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi # DeltaV - resprite security signs
     state: security
 
 - type: entity
