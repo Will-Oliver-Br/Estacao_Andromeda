@@ -80,7 +80,7 @@ namespace Content.Client.VendingMachines.UI
         /// Populates the list of available items on the vending machine interface
         /// and sets icons based on their prototypes
         /// </summary>
-        public void Populate(List<VendingMachineInventoryEntry> inventory, out List<int> filteredInventory, double priceMultiplier, int credits, string? filter = null) //ADT-Economy
+        public void Populate(EntityUid entityUid, List<VendingMachineInventoryEntry> inventory, out List<int> filteredInventory, double priceMultiplier, int credits, string? filter = null) //ADT-Economy
         {
             //ADT-Economy-Start
             CreditsLabel.Text = Loc.GetString("vending-ui-credits-amount", ("credits", credits));
@@ -91,6 +91,7 @@ namespace Content.Client.VendingMachines.UI
                     return;
                 OnWithdraw?.Invoke(new VendingMachineWithdrawMessage());
             };
+            var vendComp = _entityManager.GetComponent<VendingMachineComponent>(entityUid); //ADT-Economy
             //ADT-Economy-End
             {
                 SearchBar.Visible = false;
@@ -121,13 +122,24 @@ namespace Content.Client.VendingMachines.UI
 
                 if (!_prototypeManager.TryIndex(entry.ID, out var prototype))
                     continue;
-                var price = (int)(entry.Price * priceMultiplier); //ADT-Economy
 
                 if (!_dummies.TryGetValue(entry.ID, out var dummy))
                 {
                     dummy = _entityManager.Spawn(entry.ID);
                     _dummies.Add(entry.ID, dummy);
                 }
+
+                //ADT-Economy-Start
+                var price = 0;
+                if (!vendComp.AllForFree)
+                {
+                    price = (int)(entry.Price * priceMultiplier);
+                }
+                else
+                {
+                    price = 0; // Это работает только если заспавненный вендомат уже был с этим значением. Спасибо визардам и их bounduserinterface емае.
+                }
+                //ADT-Economy-Start
 
                 var itemName = Identity.Name(dummy, _entityManager);
                 var itemText = $"{itemName} [{entry.Amount}]";
@@ -137,7 +149,7 @@ namespace Content.Client.VendingMachines.UI
 
                 listData.Add(new VendorItemsListData(prototype.ID, itemText, i));
 
-                vendingItem.Text = $" [{price}$] {itemName} [{entry.Amount}]"; //ADT-Economy
+                vendingItem.Text = $"[{price}$] {itemName} [{entry.Amount}]"; //ADT-Economy
             }
 
             VendingContents.PopulateList(listData);

@@ -32,7 +32,7 @@ namespace Content.Client.VendingMachines
             _menu.OnClose += Close; //ADT-Economy
             _menu.OnWithdraw += SendMessage; //ADT-Economy
 
-            _menu.Populate(_cachedInventory, out _cachedFilteredIndex, component.PriceMultiplier, component.Credits); //ADT-Economy
+            _menu.Populate(Owner, _cachedInventory, out _cachedFilteredIndex, component.PriceMultiplier, component.Credits); //ADT-Economy
         }
 
         public void Refresh()
@@ -51,7 +51,7 @@ namespace Content.Client.VendingMachines
             if (data is not VendorItemsListData { ItemIndex: var itemIndex })
                 return;
 
-            _menu?.Populate(_cachedInventory, out _cachedFilteredIndex, newState.PriceMultiplier, newState.Credits); //ADT-Economy
+            _menu?.Populate(Owner, _cachedInventory, out _cachedFilteredIndex, newState.PriceMultiplier, newState.Credits, _menu.SearchBar.Text); //ADT-Economy
         }
         {
             if (_cachedInventory.Count == 0)
@@ -83,7 +83,7 @@ namespace Content.Client.VendingMachines
         {
             //ADT-Economy-Start
             var component = EntMan.GetComponent<VendingMachineComponent>(Owner);
-            _menu?.Populate(_cachedInventory, out _cachedFilteredIndex, component.PriceMultiplier, component.Credits, filter);
+            _menu?.Populate(Owner, _cachedInventory, out _cachedFilteredIndex, component.PriceMultiplier, component.Credits, filter);
             //ADT-Economy-End
         }
     }
