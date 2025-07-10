@@ -1,6 +1,9 @@
-﻿using Content.Shared.Mind;
+﻿using Content.Shared.Cargo.Prototypes;
+using Content.Shared.Mind;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
-namespace Content.Server.ADT.Economy;
+namespace Content.Shared.ADT.Economy;
 
 public sealed class BankAccount
 {
@@ -10,14 +13,14 @@ public sealed class BankAccount
     public bool CommandBudgetAccount;
     public Entity<MindComponent>? Mind;
     public string Name = string.Empty;
-
+    public ProtoId<CargoAccountPrototype>? AccountPrototype;
     public EntityUid? CartridgeUid;
 
-    public BankAccount(int accountId, int balance)
+    public BankAccount(int accountId, int balance, IRobustRandom random)
     {
         AccountId = accountId;
         Balance = balance;
-        AccountPin = Random.Shared.Next(1000, 10000);
+        AccountPin = random.Next(1000, 10000);
     }
 }
 

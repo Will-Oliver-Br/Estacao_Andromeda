@@ -4,6 +4,7 @@ using Content.Shared.VendingMachines;
 using Robust.Client.UserInterface;
 using Robust.Shared.Input;
 using System.Linq;
+using Content.Client.VendingMachines; // ADT-Economy - Added missing using directive
 
 namespace Content.Client.VendingMachines
 {
@@ -28,11 +29,12 @@ namespace Content.Client.VendingMachines
             _menu.OnItemCountSelected += OnItemSelected;    // ADT vending eject count
             Refresh();
             var component = EntMan.GetComponent<VendingMachineComponent>(Owner); //ADT-Economy
+            var vendingMachineSys = EntMan.System<VendingMachineSystem>(); // ADT-Economy - Fixed system reference
             _cachedInventory = vendingMachineSys.GetAllInventory(Owner, component); //ADT-Economy
             _menu.OnClose += Close; //ADT-Economy
             _menu.OnWithdraw += SendMessage; //ADT-Economy
 
-            _menu.Populate(Owner, _cachedInventory, out _cachedFilteredIndex, component.PriceMultiplier, component.Credits); //ADT-Economy
+            _menu.Populate(Owner, _cachedInventory, component.PriceMultiplier, component.Credits); //ADT-Economy - Removed out parameter
         }
 
         public void Refresh()
@@ -40,7 +42,8 @@ namespace Content.Client.VendingMachines
             var system = EntMan.System<VendingMachineSystem>();
             _cachedInventory = system.GetAllInventory(Owner);
 
-            _menu?.Populate(_cachedInventory);
+            var component = EntMan.GetComponent<VendingMachineComponent>(Owner); // ADT-Economy - Added component reference
+            _menu?.Populate(Owner, _cachedInventory, component.PriceMultiplier, component.Credits); // ADT-Economy - Updated parameters
         }
 
         protected override void UpdateState(BoundUserInterfaceState state)
@@ -70,9 +73,6 @@ namespace Content.Client.VendingMachines
             if (data is not VendorItemsListData { ItemIndex: var itemIndex })
                 return;
 
-            _menu?.Populate(Owner, _cachedInventory, out _cachedFilteredIndex, newState.PriceMultiplier, newState.Credits, _menu.SearchBar.Text); //ADT-Economy
-        }
-        {
             if (_cachedInventory.Count == 0)
                 return;
 
@@ -96,14 +96,6 @@ namespace Content.Client.VendingMachines
             _menu.OnItemCountSelected -= OnItemSelected;    // ADT vending eject count
             _menu.OnClose -= Close;
             _menu.Dispose();
-        }
-
-        private void OnSearchChanged(string? filter)
-        {
-            //ADT-Economy-Start
-            var component = EntMan.GetComponent<VendingMachineComponent>(Owner);
-            _menu?.Populate(Owner, _cachedInventory, out _cachedFilteredIndex, component.PriceMultiplier, component.Credits, filter);
-            //ADT-Economy-End
         }
     }
 }

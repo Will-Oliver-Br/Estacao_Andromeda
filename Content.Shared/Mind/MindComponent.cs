@@ -36,6 +36,8 @@ public sealed partial class MindComponent : Component
     public List<EntityUid> ObjectiveTargets = new();
     // imp end
 
+    internal readonly HashSet<Memory> Memories = new(); //ADT-Economy
+
     /// <summary>
     ///     The session ID of the player owning this mind.
     /// </summary>
