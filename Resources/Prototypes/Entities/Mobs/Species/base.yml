@@ -9,8 +9,8 @@
   id: BaseMobSpecies
   abstract: true
   components:
-    - type: Sprite
-      layers:
+  - type: Sprite
+    layers:
         - map: ["enum.HumanoidVisualLayers.Chest"]
         - map: ["enum.HumanoidVisualLayers.Head"]
         - map: ["enum.HumanoidVisualLayers.Snout"]
@@ -67,25 +67,25 @@
           state: "halo"
           shader: unshaded
           visible: false
-    - type: DamageVisuals
-      thresholds: [10, 20, 30, 50, 70, 100]
-      targetLayers:
+  - type: DamageVisuals
+    thresholds: [10, 20, 30, 50, 70, 100]
+    targetLayers:
         - "enum.HumanoidVisualLayers.Chest"
         - "enum.HumanoidVisualLayers.Head"
         - "enum.HumanoidVisualLayers.LArm"
         - "enum.HumanoidVisualLayers.LLeg"
         - "enum.HumanoidVisualLayers.RArm"
         - "enum.HumanoidVisualLayers.RLeg"
-      damageOverlayGroups:
+    damageOverlayGroups:
         Brute:
           sprite: Mobs/Effects/brute_damage.rsi
           color: "#FF0000"
         Burn:
           sprite: Mobs/Effects/burn_damage.rsi
-    - type: GenericVisualizer
-      visuals:
-        enum.CreamPiedVisuals.Creamed:
-          clownedon: # Not 'creampied' bc I can already see Skyrat complaining about conflicts.
+  - type: GenericVisualizer
+    visuals:
+    enum.CreamPiedVisuals.Creamed:
+        clownedon: # Not 'creampied' bc I can already see Skyrat complaining about conflicts.
             True: { visible: true }
             False: { visible: false }
         enum.CultHaloVisuals.CultHalo:
