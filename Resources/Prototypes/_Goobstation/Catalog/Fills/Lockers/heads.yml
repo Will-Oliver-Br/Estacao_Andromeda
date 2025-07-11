@@ -3,6 +3,7 @@
   table: !type:AllSelector
     children:
     - id: BoxFolderCentCom
+    - id: LockedBriefcase
     - id: WeaponDisabler
     - id: BriefcaseBrownFilled
     - id: BookSpaceLaw
