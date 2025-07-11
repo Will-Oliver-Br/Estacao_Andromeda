@@ -54,6 +54,10 @@
 #  id: GoobHeretic
 #  background: /Textures/LobbyScreens/heretic.webp
 
+#- type: lobbyBackground
+#  id: cirnoStation
+#  background: /Textures/LobbyScreens/cirnostation.webp
+
 - type: lobbyBackground
   id: ReclaimerNuke
   background: /Textures/LobbyScreens/reclaimer-nuke.webp
@@ -82,10 +86,6 @@
   id: rats
   background: /Textures/LobbyScreens/rats.webp
 
-- type: lobbyBackground
-  id: cirnoStation
-  background: /Textures/LobbyScreens/cirnostation.webp
-
 # Andromeda
 
 - type: lobbyBackground
@@ -93,8 +93,12 @@
   background: /Textures/LobbyScreens/omg_chloe_sec.webp
 
 - type: lobbyBackground
+  id: RevForever
+  background: /Textures/LobbyScreens/rev_forever.webp
+
+- type: lobbyBackground
   id: RokhoarAnomalia2Paisagem
-  background: /Textures/LobbyScreens/Rokhoar_Anomalia_2_Paisagem.webp
+  background: /Textures/LobbyScreens/Rokhoar_Anomalia_2_Paisagem.png #ESPERO que o png funcione
 
 - type: lobbyBackground
   id: DudaMussiaRedphone
