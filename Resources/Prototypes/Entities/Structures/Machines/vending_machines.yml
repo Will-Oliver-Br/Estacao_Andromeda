@@ -184,7 +184,7 @@
     normalState: normal-unshaded
     denyState: deny-unshaded
     loopDeny: false
-    priceMultiplier: 0.57 # ADT-Economy
+    priceMultiplier: 1 # ADT-Economy
   - type: Advertise
     pack: BoozeOMatAds
   - type: SpeakOnUIClosed
@@ -218,6 +218,7 @@
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded
+    allForFree: true # ADT-Economy
     loopDeny: false
   - type: Advertise
     pack: BruiseOMatAds
@@ -846,6 +847,7 @@
     normalState: normal-unshaded
     denyState: deny-unshaded
     ejectState: eject-unshaded
+    allForFree: true # ADT-Economy
   - type: Advertise
     pack: MagiVendAds
   - type: SpeakOnUIClosed

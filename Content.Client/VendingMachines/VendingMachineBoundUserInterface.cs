@@ -24,7 +24,7 @@ namespace Content.Client.VendingMachines
         {
             base.Open();
 
-            _menu = this.CreateWindowCenteredLeft<VendingMachineMenu>();
+            _menu = new VendingMachineMenu();
             _menu.Title = EntMan.GetComponent<MetaDataComponent>(Owner).EntityName;
             _menu.OnItemCountSelected += OnItemSelected;    // ADT vending eject count
             Refresh();
@@ -35,16 +35,18 @@ namespace Content.Client.VendingMachines
             _menu.OnWithdraw += SendMessage; //ADT-Economy
 
             _menu.Populate(Owner, _cachedInventory, component.PriceMultiplier, component.Credits); //ADT-Economy - Removed out parameter
+            _menu.OpenCentered();
         }
 
         public void Refresh()
         {
             var system = EntMan.System<VendingMachineSystem>();
+            var component = EntMan.GetComponent<VendingMachineComponent>(Owner); //ADT-Economy
             _cachedInventory = system.GetAllInventory(Owner);
 
-            var component = EntMan.GetComponent<VendingMachineComponent>(Owner); // ADT-Economy - Added component reference
-            _menu?.Populate(Owner, _cachedInventory, component.PriceMultiplier, component.Credits); // ADT-Economy - Updated parameters
+            _menu?.Populate(Owner, _cachedInventory, component.PriceMultiplier, component.Credits); //ADT-Economy-Tweak
         }
+
 
         // START-ADT-TWEAK
         protected override void UpdateState(BoundUserInterfaceState state)
@@ -62,7 +64,7 @@ namespace Content.Client.VendingMachines
 
         private void OnItemSelected(VendingMachineInventoryEntry entry, VendingMachineItem item)
         {
-            SendMessage(new VendingMachineEjectCountMessage(entry, item.Count.SelectedId + 1));
+            SendPredictedMessage(new VendingMachineEjectCountMessage(entry, item.Count.SelectedId + 1));
         }
 
         // END-ADT-TWEAK
