@@ -361,45 +361,32 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     }
 
     public void GiveDummyLoadout(EntityUid uid, RoleLoadout? roleLoadout, bool outerwear)
+{
+    if (roleLoadout == null)
+        return;
+
+    var underwearSlots = new HashSet<string> { "undershirt", "underpants", "socks" };
+
+    foreach (var group in roleLoadout.SelectedLoadouts.Values)
     {
-        if (roleLoadout == null)
-            return;
-
-        // Sunrtise-Start
-        var undervearSlots = new List<string> { "undershirt", "underpants", "socks" };
-        // Sunrtise-End
-
-        foreach (var group in roleLoadout.SelectedLoadouts.Values)
+        foreach (var loadout in group)
         {
-            foreach (var loadout in group)
+            if (!_prototypeManager.TryIndex(loadout.Prototype, out var loadoutProto) || !loadoutProto.Equipment.Any())
+                continue;
+
+            bool isPureUnderwear = loadoutProto.Equipment.Keys.All(underwearSlots.Contains);
+
+            // A condição agora é uma única verificação booleana.
+            // Equipar se (queremos outerwear E o item NÃO é só underwear) OU (queremos underwear E o item É só underwear).
+            bool shouldWear = (outerwear && !isPureUnderwear) || (!outerwear && isPureUnderwear);
+
+            if (shouldWear)
             {
-                var wear = true; // Sunrtise-Edit
-                if (!_prototypeManager.TryIndex(loadout.Prototype, out var loadoutProto))
-                    continue;
-
-                // Sunrtise-Start
-                // Verifica se o loadout é composto exclusivamente por roupas de baixo.
-                bool isPureUnderwear = loadoutProto.Equipment.Any() && loadoutProto.Equipment.Keys.All(s => undervearSlots.Contains(s));
-
-                if (outerwear)
-                {
-                    // Se estamos na passagem de "outerwear" (roupas de cima), não devemos vestir loadouts que são apenas de roupa de baixo.
-                    if (isPureUnderwear)
-                        wear = false;
-                }
-                else
-                {
-                    // Se estamos na passagem de "underwear" (roupas de baixo), SÓ devemos vestir loadouts que são de roupa de baixo.
-                    if (!isPureUnderwear)
-                        wear = false;
-                }
-
-                if (wear)
-                    _spawn.EquipStartingGear(uid, loadoutProto);
-                // Sunrtise-End
+                _spawn.EquipStartingGear(uid, loadoutProto);
             }
         }
     }
+}
 
     /// <summary>
     /// Applies the specified job's clothes to the dummy.
