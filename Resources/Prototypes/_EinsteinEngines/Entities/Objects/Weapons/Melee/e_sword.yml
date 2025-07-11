@@ -1,0 +1,37 @@
+- type: entity
+  name: energy cutlass
+  parent: [BaseMeleeWeaponEnergy, BaseMajorContraband]
+  id: EnergyCutlassSecurity
+  description: A sleek energy weapon, its blade hums with volatile plasma, expertly contained to cut through nearly any material. The serial number on the hilt marks this gun as belonging to an NT Security Officer. # how do I make the text blue
+  suffix: Security Loadouts
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Melee/e_cutlass.rsi
+    layers:
+      - state: e_cutlass
+      - state: e_cutlass_blade
+        color: "#e95151"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    sprite: _DV/Objects/Weapons/Melee/e_cutlass.rsi
+  - type: MeleeWeapon
+    attackRate: 1.25
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Slash: 5
+        Heat: 12
+        Structural: 20 # "expertly contained to cut through nearly any material" yet it had no structural damage
+
+- type: entity
+  name: antique energy sword
+  parent: EnergySword
+  id: EnergySwordHoS
+  description: An elegant weapon fit for a prince, this otherwise plain silver hilt is engraved with, "My Love".
+  components:
+  - type: EnergySword
+    activatedColor: "#00CCFF"
+    colorOptions:
+    - "#00CCFF"

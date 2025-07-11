@@ -2,27 +2,35 @@
 - type: roleLoadout
   id: JobCaptain
   groups:
-  - CaptainHead
-  - CaptainNeck
-  - CaptainJumpsuit
-  - CaptainBackpack
-  - CaptainOuterClothing
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - CaptainHead
+    - CaptainNeck
+    - CaptainJumpsuit
+    - CaptainBackpack
+    - CaptainOuterClothing
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
   groups:
-  - HoPHead
-  - HoPNeck
-  - HoPJumpsuit
-  - HoPBackpack
-  - HoPOuterClothing
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - HoPHead
+    - HoPNeck
+    - HoPJumpsuit
+    - HoPBackpack
+    - HoPOuterClothing
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 # Silicons
 #- type: roleLoadout
@@ -39,505 +47,656 @@
 - type: roleLoadout
   id: JobPassenger
   groups:
-  - PassengerJumpsuit
-  - CommonBackpack
-  - PassengerNeck
-  - PassengerFace
-  - PassengerGloves
-  - PassengerOuterClothing
-  - PassengerShoes
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - PassengerJumpsuit
+    - CommonBackpack
+    - PassengerNeck
+    - PassengerFace
+    - PassengerGloves
+    - PassengerOuterClothing
+    - PassengerShoes
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobBartender
   groups:
-  - BartenderHead
-  - BartenderJumpsuit
-  - CommonBackpack
-  - BartenderOuterClothing
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - BartenderHead
+    - BartenderJumpsuit
+    - CommonBackpack
+    - BartenderOuterClothing
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobServiceWorker
   groups:
-  - BartenderJumpsuit
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - BartenderJumpsuit
+    - CommonBackpack
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobChef
   groups:
-  - ChefHead
-  - ChefMask
-  - ChefJumpsuit
-  - CommonBackpack
-  - ChefOuterClothing
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - ChefHead
+    - ChefMask
+    - ChefJumpsuit
+    - CommonBackpack
+    - ChefOuterClothing
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobLibrarian
   groups:
-  - LibrarianJumpsuit
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - LibrarianJumpsuit
+    - CommonBackpack
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobLawyer
   groups:
-  - LawyerNeck
-  - LawyerJumpsuit
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - LawyerNeck
+    - LawyerJumpsuit
+    - CommonBackpack
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobChaplain
   groups:
-  - ChaplainHead
-  - ChaplainEyes # imp
-  - ChaplainMask
-  - ChaplainNeck
-  - ChaplainJumpsuit
-  - CommonBackpack
-  - ChaplainOuterClothing
-  - ChaplainBelt # imp
-  - Glasses
-  - Survival
-  - ChaplainBible # Funky
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - ChaplainHead
+    - ChaplainEyes # imp
+    - ChaplainMask
+    - ChaplainNeck
+    - ChaplainJumpsuit
+    - CommonBackpack
+    - ChaplainOuterClothing
+    - ChaplainBelt # imp
+    - Glasses
+    - Survival
+    - ChaplainBible # Funky
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobJanitor
   groups:
-  - JanitorHead
-  - JanitorJumpsuit
-  - JanitorGloves
-  - CommonBackpack
-  - JanitorOuterClothing
-  - Glasses
-  - Survival
-  - Trinkets
-  - JanitorPlunger
-  - GroupSpeciesBreathTool
+    - JanitorHead
+    - JanitorJumpsuit
+    - JanitorGloves
+    - CommonBackpack
+    - JanitorOuterClothing
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - JanitorPlunger
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobBotanist
   groups:
-  - BotanistHead
-  - BotanistJumpsuit
-  - BotanistBackpack
-  - BotanistOuterClothing
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - BotanistHead
+    - BotanistJumpsuit
+    - BotanistBackpack
+    - BotanistOuterClothing
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobClown
   canCustomizeName: true
   groups:
-  - ClownHead
-  - ClownMask
-  - ClownJumpsuit
-  - ClownBackpack
-  - ClownOuterClothing
-  - ClownShoes
-  - Glasses
-  - SurvivalClown
-  - Trinkets
+    - ClownHead
+    - ClownMask
+    - ClownJumpsuit
+    - ClownBackpack
+    - ClownOuterClothing
+    - ClownShoes
+    - Glasses
+    - SurvivalClown
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobMime
   canCustomizeName: true
   groups:
-  - MimeHead
-  - MimeMask
-  - MimeJumpsuit
-  - MimeBackpack
-  - MimeOuterClothing
-  - MimeBelt
-  - Glasses
-  - SurvivalMime
-  - Trinkets
+    - MimeHead
+    - MimeMask
+    - MimeJumpsuit
+    - MimeBackpack
+    - MimeOuterClothing
+    - MimeBelt
+    - Glasses
+    - SurvivalMime
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobMusician
   canCustomizeName: true
   groups:
-  - MusicianJumpsuit
-  - CommonBackpack
-  - MusicianOuterClothing
-  - Glasses
-  - Survival
-  - Trinkets
-  - Instruments
-  - GroupSpeciesBreathTool
+    - MusicianJumpsuit
+    - CommonBackpack
+    - MusicianOuterClothing
+    - Glasses
+    - Survival
+    - Trinkets
+    - Instruments
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 # Cargo
 - type: roleLoadout
   id: JobQuartermaster
   groups:
-  - QuartermasterHead
-  - QuartermasterNeck
-  - QuartermasterJumpsuit
-  - CargoTechnicianBackpack
-  - QuartermasterOuterClothing
-  - QuartermasterShoes
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - QuartermasterHead
+    - QuartermasterNeck
+    - QuartermasterJumpsuit
+    - CargoTechnicianBackpack
+    - QuartermasterOuterClothing
+    - QuartermasterShoes
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobCargoTechnician
   groups:
-  - CargoTechnicianHead
-  - CargoTechnicianJumpsuit
-  - CargoTechnicianBackpack
-  - CargoTechnicianOuterClothing
-  - CargoTechnicianShoes
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - CargoTechnicianHead
+    - CargoTechnicianJumpsuit
+    - CargoTechnicianBackpack
+    - CargoTechnicianOuterClothing
+    - CargoTechnicianShoes
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobSalvageSpecialist
   groups:
-  - SalvageSpecialistBackpack
-  - SalvageSpecialistOuterClothing
-  - SalvageSpecialistShoes
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - SalvageSpecialistBackpack
+    - SalvageSpecialistOuterClothing
+    - SalvageSpecialistShoes
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 # Engineering
 - type: roleLoadout
   id: JobChiefEngineer
   groups:
-  - ChiefEngineerHead
-  - EngineeringGoggles #Funky
-  - ChiefEngineerJumpsuit
-  - StationEngineerBackpack
-  - ChiefEngineerNeck
-  - ChiefEngineerOuterClothing
-  - ChiefEngineerShoes
-  - SurvivalExtended
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - ChiefEngineerHead
+    - EngineeringGoggles #Funky
+    - ChiefEngineerJumpsuit
+    - StationEngineerBackpack
+    - ChiefEngineerNeck
+    - ChiefEngineerOuterClothing
+    - ChiefEngineerShoes
+    - SurvivalExtended
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobTechnicalAssistant
   groups:
-  - TechnicalAssistantJumpsuit
-  - StationEngineerBackpack
-  - SurvivalExtended
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - TechnicalAssistantJumpsuit
+    - StationEngineerBackpack
+    - SurvivalExtended
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobStationEngineer
   groups:
-  - StationEngineerHead
-  - EngineeringGoggles #Funky
-  - StationEngineerJumpsuit
-  - StationEngineerBackpack
-  - StationEngineerOuterClothing
-  - StationEngineerShoes
-  - StationEngineerID
-  - SurvivalExtended
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - StationEngineerHead
+    - EngineeringGoggles #Funky
+    - StationEngineerJumpsuit
+    - StationEngineerBackpack
+    - StationEngineerOuterClothing
+    - StationEngineerShoes
+    - StationEngineerID
+    - SurvivalExtended
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
-  - AtmosphericTechnicianHead # Goobstation
-  - EngineeringGoggles
-  - AtmosphericTechnicianJumpsuit
-  - AtmosphericTechnicianBackpack
-  - AtmosphericTechnicianOuterClothing
-  - AtmosphericTechnicianShoes
-  - SurvivalExtended
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - AtmosphericTechnicianHead # Goobstation
+    - EngineeringGoggles
+    - AtmosphericTechnicianJumpsuit
+    - AtmosphericTechnicianBackpack
+    - AtmosphericTechnicianOuterClothing
+    - AtmosphericTechnicianShoes
+    - SurvivalExtended
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 # Science
 - type: roleLoadout
   id: JobResearchDirector
   groups:
-  - ResearchDirectorHead
-  - ResearchDirectorNeck
-  - ResearchDirectorJumpsuit
-  - ScientistBackpack
-  - ResearchDirectorOuterClothing
-  - ScientistGloves
-  - ResearchDirectorShoes
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - ResearchDirectorHead
+    - ResearchDirectorNeck
+    - ResearchDirectorJumpsuit
+    - ScientistBackpack
+    - ResearchDirectorOuterClothing
+    - ScientistGloves
+    - ResearchDirectorShoes
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobScientist
   groups:
-  - ScientistHead
-  - ScientistNeck
-  - ScientistJumpsuit
-  - ScientistBackpack
-  - ScientistOuterClothing
-  - ScientistGloves
-  - ScientistShoes
-  - ScientistPDA
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - ScientistHead
+    - ScientistNeck
+    - ScientistJumpsuit
+    - ScientistBackpack
+    - ScientistOuterClothing
+    - ScientistGloves
+    - ScientistShoes
+    - ScientistPDA
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobResearchAssistant
   groups:
-  - ResearchAssistantJumpsuit
-  - ScientistBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - ResearchAssistantJumpsuit
+    - ScientistBackpack
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 # Security
 - type: roleLoadout
   id: JobHeadOfSecurity
   groups:
-  - HeadofSecurityHead
-  - SecurityGlasses #Funky
-  - HeadofSecurityNeck
-  - HeadofSecurityJumpsuit
-  - SecurityBackpack
-  - SecurityBelt
-  - HeadofSecurityOuterClothing
-  - SecurityShoes
-  - SurvivalSecurity
-  - Trinkets
-  - SecurityStar
-  - GroupSpeciesBreathToolSecurity
+    - HeadofSecurityHead
+    - SecurityGlasses #Funky
+    - HeadofSecurityNeck
+    - HeadofSecurityJumpsuit
+    - SecurityBackpack
+    - SecurityBelt
+    - HeadofSecurityOuterClothing
+    - SecurityShoes
+    - SurvivalSecurity
+    - HeadSecurityArmas # Andromeda
+    - SecurityArmas # Andromeda
+    - SecurityAllAmmo # Andromeda
+    - Trinkets
+    - SecurityStar
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolSecurity
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobWarden
   groups:
-  - WardenHead
-  - SecurityGlasses #Funky
-  - WardenJumpsuit
-  - WardenNeck
-  - SecurityBackpack
-  - SecurityBelt
-  - WardenOuterClothing
-  - SecurityShoes
-  - SurvivalSecurity
-  - Trinkets
-  - SecurityStar
-  - GroupSpeciesBreathToolSecurity
+    - WardenHead
+    - SecurityGlasses #Funky
+    - WardenJumpsuit
+    - WardenNeck
+    - SecurityBackpack
+    - SecurityBelt
+    - WardenOuterClothing
+    - SecurityShoes
+    - SurvivalSecurity
+    - SecurityArmas # Andromeda
+    - SecurityAllAmmo # Andromeda
+    - Trinkets
+    - SecurityStar
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolSecurity
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
-  - SecurityHead
-  - SecurityJumpsuit
-  - SecurityGlasses #Funky
-  - SecurityNeck
-  - SecurityBackpack
-  - SecurityOuterClothing
-  - SecurityShoes
-  - SecurityPDA
-  - SecurityBelt
-  - SurvivalSecurity
-  - Trinkets
-  - SecurityStar
-  - GroupSpeciesBreathToolSecurity
+    - SecurityHead
+    - SecurityJumpsuit
+    - SecurityGlasses #Funky
+    - SecurityNeck
+    - SecurityBackpack
+    - SecurityOuterClothing
+    - SecurityShoes
+    - SecurityPDA
+    - SecurityBelt
+    - SurvivalSecurity
+    - SecurityArmas # Andromeda
+    - SecurityAllAmmo # Andromeda
+    - Trinkets
+    - SecurityStar
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolSecurity
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobDetective
   groups:
-  - DetectiveHead
-  - DetectiveNeck
-  - SecurityGlasses #Funky
-  - DetectiveJumpsuit
-  - SecurityBackpack
-  - DetectiveOuterClothing
-  - SecurityShoes
-  - SurvivalSecurity
-  - Trinkets
-  - SecurityStar
-  - GroupSpeciesBreathToolSecurity
+    - DetectiveHead
+    - DetectiveNeck
+    - SecurityGlasses #Funky
+    - DetectiveJumpsuit
+    - SecurityBackpack
+    - DetectiveOuterClothing
+    - SecurityShoes
+    - SurvivalSecurity
+    - SecurityArmas # Andromeda
+    - SecurityAllAmmo # Andromeda
+    - Trinkets
+    - SecurityStar
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolSecurity
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobSecurityCadet
   groups:
-  - SecurityCadetJumpsuit
-  - SecurityBackpack
-  - SurvivalSecurity
-  - SecurityOuterClothing # Goobstation - Why not.
-  - Trinkets
-  - GroupSpeciesBreathToolSecurity
+    - SecurityCadetJumpsuit
+    - SecurityBackpack
+    - SurvivalSecurity
+    - SecurityOuterClothing # Goobstation - Why not.
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolSecurity
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 # Medical
 - type: roleLoadout
   id: JobChiefMedicalOfficer
   groups:
-  - ChiefMedicalOfficerHead
-  - MedicalMask
-  - MedicalDoctorGlasses #Funky
-  - ChiefMedicalOfficerJumpsuit
-  - MedicalGloves
-  - MedicalBackpack
-  - ChiefMedicalOfficerOuterClothing
-  - ChiefMedicalOfficerNeck
-  - ChiefMedicalOfficerShoes
-  - Glasses
-  - SurvivalMedical
-  - Trinkets
-  - GroupSpeciesBreathToolMedical
+    - ChiefMedicalOfficerHead
+    - MedicalMask
+    - MedicalDoctorGlasses #Funky
+    - ChiefMedicalOfficerJumpsuit
+    - MedicalGloves
+    - MedicalBackpack
+    - ChiefMedicalOfficerOuterClothing
+    - ChiefMedicalOfficerNeck
+    - ChiefMedicalOfficerShoes
+    - Glasses
+    - SurvivalMedical
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolMedical
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobMedicalDoctor
   groups:
-  - MedicalDoctorHead
-  - MedicalMask
-  - MedicalDoctorGlasses
-  - MedicalDoctorJumpsuit
-  - MedicalGloves
-  - MedicalBackpack
-  - MedicalDoctorOuterClothing
-  - MedicalShoes
-  - MedicalDoctorPDA
-  - Glasses
-  - SurvivalMedical
-  - Trinkets
-  - GroupSpeciesBreathToolMedical
+    - MedicalDoctorHead
+    - MedicalMask
+    - MedicalDoctorGlasses
+    - MedicalDoctorJumpsuit
+    - MedicalGloves
+    - MedicalBackpack
+    - MedicalDoctorOuterClothing
+    - MedicalShoes
+    - MedicalDoctorPDA
+    - Glasses
+    - SurvivalMedical
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolMedical
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobMedicalIntern
   groups:
-  - MedicalInternJumpsuit
-  - MedicalBackpack
-  - Glasses
-  - SurvivalMedical
-  - Trinkets
-  - GroupSpeciesBreathToolMedical
+    - MedicalInternJumpsuit
+    - MedicalBackpack
+    - Glasses
+    - SurvivalMedical
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolMedical
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobChemist
   groups:
-  - MedicalMask
-  - MedicalChemistGlasses #Funky
-  - ChemistJumpsuit
-  - MedicalGloves
-  - ChemistBackpack
-  - ChemistOuterClothing
-  - MedicalShoes
-  - SurvivalMedical
-  - Trinkets
-  - GroupSpeciesBreathToolMedical
+    - MedicalMask
+    - MedicalChemistGlasses #Funky
+    - ChemistJumpsuit
+    - MedicalGloves
+    - ChemistBackpack
+    - ChemistOuterClothing
+    - MedicalShoes
+    - SurvivalMedical
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolMedical
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobParamedic
   groups:
-  - ParamedicHead
-  - MedicalMask
-  - MedicalDoctorGlasses #Funky
-  - ParamedicJumpsuit
-  - MedicalGloves
-  - MedicalBackpack
-  - ParamedicOuterClothing
-  - ParamedicShoes
-  - Glasses
-  - SurvivalMedical
-  - Trinkets
-  - GroupSpeciesBreathToolMedical
+    - ParamedicHead
+    - MedicalMask
+    - MedicalDoctorGlasses #Funky
+    - ParamedicJumpsuit
+    - MedicalGloves
+    - MedicalBackpack
+    - ParamedicOuterClothing
+    - ParamedicShoes
+    - Glasses
+    - SurvivalMedical
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathToolMedical
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 # Wildcards
 - type: roleLoadout
   id: JobZookeeper
   groups:
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - CommonBackpack
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobReporter
   groups:
-  - ReporterJumpsuit
-  - ReporterOuterClothing # Goobstation - Bodycams
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
-
+    - ReporterJumpsuit
+    - ReporterOuterClothing # Goobstation - Bodycams
+    - CommonBackpack
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobPsychologist
   groups:
-  - PsychologistJumpsuit
-  - MedicalBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - PsychologistJumpsuit
+    - MedicalBackpack
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 - type: roleLoadout
   id: JobBoxer
   groups:
-  - BoxerJumpsuit
-  - BoxerGloves
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
+    - BoxerJumpsuit
+    - BoxerGloves
+    - CommonBackpack
+    - Glasses
+    - Survival
+    - Trinkets
+    - ApoiadoresGroup # Andromeda
+    - GroupSpeciesBreathTool
+    - ShocksGroup
+    - UnderPantsGroup
+    - UnderShirtGroup
 
 # Event-restricted roles
 
 - type: roleLoadout
   id: JobSecurityClown
   groups:
-  - ClownBackpack
-  - SurvivalSecurity
-  - GroupSpeciesBreathToolSecurity
+    - ClownBackpack
+    - SurvivalSecurity
+    - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: JobCommandMaid
   groups:
-  - CommonBackpack
-  - Survival
-  - GroupSpeciesBreathTool
+    - CommonBackpack
+    - Survival
+    - GroupSpeciesBreathTool
 
 - type: roleLoadout
   id: JobPartyMaker
   groups:
-  - CommonBackpack
-  - Survival
-  - GroupSpeciesBreathTool
+    - CommonBackpack
+    - Survival
+    - GroupSpeciesBreathTool
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
 # They will be used without player configuration, thus they will only ever apply what is forced by MinLimit
@@ -547,66 +706,59 @@
 - type: roleLoadout
   id: RoleSurvivalVoxSupport
   groups:
-  - GroupSpeciesBreathTool
-  
+    - GroupSpeciesBreathTool
 
 # gives vox a nitrogen breathing tank
 # other species get nothing
 - type: roleLoadout
   id: RoleSurvivalVoxTank
   groups:
-  - GroupEVATankVox
+    - GroupEVATankVox
 
 - type: roleLoadout
   id: RoleSurvivalStandard
   groups:
-  - Survival
-  - GroupSpeciesBreathTool
-  
+    - Survival
+    - GroupSpeciesBreathTool
 
 - type: roleLoadout
   id: RoleSurvivalClown
   groups:
-  - SurvivalClown
-  
+    - SurvivalClown
 
 - type: roleLoadout
   id: RoleSurvivalExtended
   groups:
-  - SurvivalExtended
-  - GroupSpeciesBreathTool
-  
+    - SurvivalExtended
+    - GroupSpeciesBreathTool
 
 - type: roleLoadout
   id: RoleSurvivalMedical
   groups:
-  - SurvivalMedical
-  - GroupSpeciesBreathToolMedical
-  
+    - SurvivalMedical
+    - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
   id: RoleSurvivalSecurity
   groups:
-  - SurvivalSecurity
-  - GroupSpeciesBreathToolSecurity
-  
+    - SurvivalSecurity
+    - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: RoleSurvivalSyndicate
   groups:
-  - SurvivalSyndicate
-  - GroupSpeciesBreathTool
-  
+    - SurvivalSyndicate
+    - GroupSpeciesBreathTool
 
 - type: roleLoadout
   id: RoleSurvivalNukie
   groups:
-  - SurvivalSyndicate
-  - GroupSpeciesBreathTool
-  - GroupPocketTankDouble
+    - SurvivalSyndicate
+    - GroupSpeciesBreathTool
+    - GroupPocketTankDouble
 
 - type: roleLoadout
   id: RoleSurvivalEVA
   groups:
-  - GroupEVATank
-  - SurvivalExtended
+    - GroupEVATank
+    - SurvivalExtended

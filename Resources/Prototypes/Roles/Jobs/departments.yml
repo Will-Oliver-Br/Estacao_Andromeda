@@ -61,7 +61,9 @@
   roles:
   - BlueshieldOfficer # Goobstation
   - NanotrasenRepresentative # Goobstation
+  - Magistrate
   - InternalAffairsAgent # FunkyStation
+  - CentralCommandOperador # Andromeda
   editorHidden: false
   weight: 120
 

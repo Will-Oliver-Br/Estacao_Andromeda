@@ -26,6 +26,9 @@
     ClothingShoesBootsCombat: 1
     ClothingShoesBootsWinterSec: 2
     ClothingHeadHelmetJustice: 1
+    ClothingNeckCWPSec: 3 # DeltaV - add cold weather ponchos
+    ClothingUniformJumpsuitSecFormal: 2 # DeltaV - add formal uniform to secdrobe
+    ClothingUniformJumpskirtSecFormal: 2 # DeltaV - add formal uniform to secdrobe
   contrabandInventory:
     ClothingMaskClownSecurity: 1
     ToyFigurineSecurity: 1

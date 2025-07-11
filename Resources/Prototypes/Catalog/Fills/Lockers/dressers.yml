@@ -108,3 +108,5 @@
     contents:
       - id: ClothingHeadHatWarden
       - id: ClothingHeadHatBeretWarden
+      - id: ClothingShoesBootsWinterSec # DeltaV - add winter boots
+      - id: ClothingOuterCoatStasecWarden # DeltaV - add winter coat

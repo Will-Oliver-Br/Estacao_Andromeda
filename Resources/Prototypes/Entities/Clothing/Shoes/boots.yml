@@ -165,9 +165,10 @@
   name: security winter boots
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/winterbootssec.rsi
+    sprite: _DV/Clothing/Shoes/Boots/winterbootssec.rsi # DeltaV - resprite boots to meet standards
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/winterbootssec.rsi
+    sprite: _DV/Clothing/Shoes/Boots/winterbootssec.rsi # DeltaV - resprite boots to meet standards
+  # Begin DeltaV additions
 
 - type: entity
   parent: [ClothingShoesBaseWinterBoots, BaseSyndicateContraband]
