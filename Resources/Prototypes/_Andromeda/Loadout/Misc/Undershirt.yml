@@ -1,0 +1,292 @@
+- type: loadout
+  id: Babydoll
+  equipment:
+    undershirt: ClothingUnderbabydoll
+- type: loadout
+  id: BandShirt
+  equipment:
+    undershirt: ClothingUnderband
+- type: loadout
+  id: BeeShirt
+  equipment:
+    undershirt: ClothingUnderbee_shirt
+- type: loadout
+  id: SportyBlueShirt
+  equipment:
+    undershirt: ClothingUnderblueshirtsport
+- type: loadout
+  id: RedBowlingShirt
+  equipment:
+    undershirt: ClothingUnderbowling
+- type: loadout
+  id: NavyBowlingShirt
+  equipment:
+    undershirt: ClothingUnderbowlinga
+- type: loadout
+  id: PinkBowlingShirt
+  equipment:
+    undershirt: ClothingUnderbowlingp
+- type: loadout
+  id: WhiteBowlingShirt
+  equipment:
+    undershirt: ClothingUnderbowlingw
+- type: loadout
+  id: BraAlt
+  equipment:
+    undershirt: ClothingUnderbra_alt
+- type: loadout
+  id: AmericanFlagBra
+  equipment:
+    undershirt: ClothingUnderbra_assblastusa
+- type: loadout
+  id: BeeKiniBra
+  equipment:
+    undershirt: ClothingUnderbra_bee-kini
+- type: loadout
+  id: StraplessBinderBra
+  equipment:
+    undershirt: ClothingUnderbra_binder_strapless
+- type: loadout
+  id: BinderBra
+  equipment:
+    undershirt: ClothingUnderbra_binder
+- type: loadout
+  id: CommieBra
+  equipment:
+    undershirt: ClothingUnderbra_commie
+- type: loadout
+  id: NekoBra
+  equipment:
+    undershirt: ClothingUnderbra_neko
+- type: loadout
+  id: StraplessBraAlt
+  equipment:
+    undershirt: ClothingUnderbra_strapless_alt
+- type: loadout
+  id: StraplessBra
+  equipment:
+    undershirt: ClothingUnderbra_strapless
+- type: loadout
+  id: SwimmingBraAlt
+  equipment:
+    undershirt: ClothingUnderbra_swimming_alt
+- type: loadout
+  id: SwimmingBra
+  equipment:
+    undershirt: ClothingUnderbra_swimming
+- type: loadout
+  id: UnionJackBra
+  equipment:
+    undershirt: ClothingUnderbra_uk
+- type: loadout
+  id: Bra
+  equipment:
+    undershirt: ClothingUnderbra
+- type: loadout
+  id: NavyCowboyShirt
+  equipment:
+    undershirt: ClothingUndercowboyshirt_navy
+- type: loadout
+  id: NavyCowboyTShirt
+  equipment:
+    undershirt: ClothingUndercowboyshirt_navys
+- type: loadout
+  id: RedCowboyShirt
+  equipment:
+    undershirt: ClothingUndercowboyshirt_red
+- type: loadout
+  id: RedCowboyTShirt
+  equipment:
+    undershirt: ClothingUndercowboyshirt_reds
+- type: loadout
+  id: CowboyTShirt
+  equipment:
+    undershirt: ClothingUndercowboyshirt_s
+- type: loadout
+  id: WhiteCowboyShirt
+  equipment:
+    undershirt: ClothingUndercowboyshirt_white
+- type: loadout
+  id: WhiteCowboyShirtTShirt
+  equipment:
+    undershirt: ClothingUndercowboyshirt_whites
+- type: loadout
+  id: CowboyShirt
+  equipment:
+    undershirt: ClothingUndercowboyshirt
+- type: loadout
+  id: SportyGreenShirt
+  equipment:
+    undershirt: ClothingUndergreenshirtsport
+- type: loadout
+  id: HalterneckBra
+  equipment:
+    undershirt: ClothingUnderhalterneck_bra
+- type: loadout
+  id: IanShirt
+  equipment:
+    undershirt: ClothingUnderian
+- type: loadout
+  id: NanotrasenShirt
+  equipment:
+    undershirt: ClothingUnderilovent
+- type: loadout
+  id: LongJohnShirt
+  equipment:
+    undershirt: ClothingUnderljont
+- type: loadout
+  id: BlueStripeShirt
+  equipment:
+    undershirt: ClothingUnderlongstripe_blue
+- type: loadout
+  id: StripeShirt
+  equipment:
+    undershirt: ClothingUnderlongstripe
+- type: loadout
+  id: LoverShirt
+  equipment:
+    undershirt: ClothingUnderlover
+- type: loadout
+  id: MatroskaShirt
+  equipment:
+    undershirt: ClothingUndermatroska
+- type: loadout
+  id: PeaceShirt
+  equipment:
+    undershirt: ClothingUnderpeace
+- type: loadout
+  id: PogomanShirt
+  equipment:
+    undershirt: ClothingUnderpogoman
+- type: loadout
+  id: PoloShirt
+  equipment:
+    undershirt: ClothingUnderpolo
+- type: loadout
+  id: SportyRedShirt
+  equipment:
+    undershirt: ClothingUnderredshirtsport
+- type: loadout
+  id: AlienShirt
+  equipment:
+    undershirt: ClothingUndershirt_alien
+- type: loadout
+  id: AmericanFlagShirt
+  equipment:
+    undershirt: ClothingUndershirt_assblastusa
+- type: loadout
+  id: BlueJersey
+  equipment:
+    undershirt: ClothingUndershirt_bluejersey
+- type: loadout
+  id: ClownShirt
+  equipment:
+    undershirt: ClothingUndershirt_clown
+- type: loadout
+  id: CommieShirt
+  equipment:
+    undershirt: ClothingUndershirt_commie
+- type: loadout
+  id: MeatShirt
+  equipment:
+    undershirt: ClothingUndershirt_meat
+- type: loadout
+  id: NanoShirt
+  equipment:
+    undershirt: ClothingUndershirt_nano
+- type: loadout
+  id: QuestionMarkShirt
+  equipment:
+    undershirt: ClothingUndershirt_question
+- type: loadout
+  id: RedJersey
+  equipment:
+    undershirt: ClothingUndershirt_redjersey
+- type: loadout
+  id: SkullShirt
+  equipment:
+    undershirt: ClothingUndershirt_skull
+- type: loadout
+  id: SS13Shirt
+  equipment:
+    undershirt: ClothingUndershirt_ss13
+- type: loadout
+  id: StripedShirt
+  equipment:
+    undershirt: ClothingUndershirt_stripes
+- type: loadout
+  id: TieDyeShirt
+  equipment:
+    undershirt: ClothingUndershirt_tiedye
+- type: loadout
+  id: TShirt
+  equipment:
+    undershirt: ClothingUndershortsleeve
+- type: loadout
+  id: SportsBraAlt
+  equipment:
+    undershirt: ClothingUndersports_bra_alt
+- type: loadout
+  id: SportsBra
+  equipment:
+    undershirt: ClothingUndersports_bra
+- type: loadout
+  id: StripedBra
+  equipment:
+    undershirt: ClothingUnderstriped_bra
+- type: loadout
+  id: BlackSwimmingShirt
+  equipment:
+    undershirt: ClothingUnderswimming_black
+- type: loadout
+  id: BlueSwimmingShirt
+  equipment:
+    undershirt: ClothingUnderswimming_blue
+- type: loadout
+  id: RedSwimmingShirt
+  equipment:
+    undershirt: ClothingUnderswimming_red
+- type: loadout
+  id: FireTankTop
+  equipment:
+    undershirt: ClothingUndertank_fire
+- type: loadout
+  id: MidriffTankTopAlt
+  equipment:
+    undershirt: ClothingUndertank_midriff_alt
+- type: loadout
+  id: MidriffTankTop
+  equipment:
+    undershirt: ClothingUndertank_midriff
+- type: loadout
+  id: RainbowTankTop
+  equipment:
+    undershirt: ClothingUndertank_rainbow
+- type: loadout
+  id: StripedTankTop
+  equipment:
+    undershirt: ClothingUndertank_stripes
+- type: loadout
+  id: SunTankTop
+  equipment:
+    undershirt: ClothingUndertank_sun
+- type: loadout
+  id: TankTopAlt
+  equipment:
+    undershirt: ClothingUndertanktop_alt
+- type: loadout
+  id: TankTop
+  equipment:
+    undershirt: ClothingUndertanktop
+- type: loadout
+  id: Tubetop
+  equipment:
+    undershirt: ClothingUndertubetop
+- type: loadout
+  id: UnionJackShirt
+  equipment:
+    undershirt: ClothingUnderuk
+- type: loadout
+  id: Undershirt
+  equipment:
+    undershirt: ClothingUnderundershirt

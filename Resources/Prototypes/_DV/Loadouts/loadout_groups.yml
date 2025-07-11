@@ -6,3 +6,27 @@
   hidden: true
   loadouts:
   - EmergencyIPCBox
+
+
+## Detective
+- type: loadoutGroup
+  id: DetectiveJumpsuitDeltaV
+  name: loadout-group-detective-jumpsuit
+  loadouts:
+  - ForensicSpecJumpsuit
+  - ForensicSpecJumpskirt
+  - ForensicSpecTurtlesuit
+  - ForensicSpecTurtleskirt
+  - ClothingUniformMiamiVice #imp
+  - ClothingUniformMiamiViceSkirt #imp
+  - ClothingUniformDetectiveSuit #imp
+  - ClothingUniformDetectiveSuitSkirt #imp
+
+- type: loadoutGroup
+  id: DetectiveOuterClothingDeltaV
+  name: loadout-group-detective-outerclothing
+  loadouts:
+  - StasecWinterCoatDet
+  - PlateCarrier
+  - DuraVest
+  - DetPlatedCoat

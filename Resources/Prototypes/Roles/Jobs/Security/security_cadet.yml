@@ -36,11 +36,12 @@
     id: SecurityCadetPDA
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponDisabler
+    #pocket1: WeaponDisabler # Andromeda
     pocket2: BookSecurity
   storage:
     back:
     - Flash
     - Handcuffs
+    - WeaponDisabler # Andromeda
     - SecHypo # Goobstation
     - CartridgeEmergency

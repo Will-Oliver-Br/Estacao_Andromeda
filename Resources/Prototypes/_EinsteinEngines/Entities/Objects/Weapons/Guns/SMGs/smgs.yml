@@ -1,0 +1,5 @@
+- type: entity
+  name: antique C-20r submachine gun
+  parent: WeaponSubMachineGunC20r
+  id: WeaponSubMachineGunC20rHoS
+  description: This heavily worn submachine gun is engraved with the words, "Remember Mars".

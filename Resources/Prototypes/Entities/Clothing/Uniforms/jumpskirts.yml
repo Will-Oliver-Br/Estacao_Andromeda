@@ -389,9 +389,9 @@
   description: A jumpskirt made of strong material, providing robust protection.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/security.rsi
+    sprite: _DV/Clothing/Uniforms/Jumpskirt/security.rsi # DeltaV - resprite
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/security.rsi
+    sprite: _DV/Clothing/Uniforms/Jumpskirt/security.rsi # DeltaV - resprite
   - type: Item
     inhandVisuals:
       left:
@@ -415,9 +415,9 @@
   description: A formal security suit for officers complete with Nanotrasen belt buckle.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/warden.rsi
+    sprite: _DV/Clothing/Uniforms/Jumpskirt/armourer.rsi # DeltaV - resprite
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/warden.rsi
+    sprite: _DV/Clothing/Uniforms/Jumpskirt/armourer.rsi # DeltaV - resprite
   - type: Item
     inhandVisuals:
       left:
