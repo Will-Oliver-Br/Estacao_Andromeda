@@ -13,6 +13,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - ApoiadoresGroup
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -24,6 +25,7 @@
   - InternalAffairsAgentBelt
   - Survival
   - Trinkets
+  - ApoiadoresGroup
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -34,4 +36,5 @@
   - MagistrateFlavor
   - Survival
   - Trinkets
+  - ApoiadoresGroup
   - GroupSpeciesBreathTool

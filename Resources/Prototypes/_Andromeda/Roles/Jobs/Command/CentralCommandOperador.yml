@@ -1,19 +1,19 @@
-﻿- type: job
+- type: job
   id: CentralCommandOperador
   name: job-name-centcomope
   description: job-description-centcomope
   playTimeTracker: JobCentralCommandOperador
-  requirements:
-  - !type:CharacterDepartmentTimeRequirement
-    department: Dignitary
-    min: 108000 # 30 horas
-  - !type:CharacterOverallTimeRequirement
-    min: 216000 #60 horas
-  - !type:CharacterTraitRequirement
-    inverted: true
-    traits:
-    - Foreigner
-    - ForeignerLight
+#  requirements:
+  #  - !type:DepartmentTimeRequirement
+  #    department: CentralCommand
+  #    min: 108000 # 30 horas
+  #  - !type:CharacterOverallTimeRequirement
+  #    min: 216000 #60 horas
+  #  - !type:CharacterTraitRequirement
+  #    inverted: true
+  #    traits:
+    #    - Foreigner
+    #    - ForeignerLight
   setPreference: true
   startingGear: CentcomOperadorGear
   icon: "JobIconNanotrasen"

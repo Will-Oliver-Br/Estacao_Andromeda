@@ -191,3 +191,19 @@
   - SecurityFirearmSpeedLoaderMagnum
   #- SecurityFirearmSpeedLoaderSpecialRubber
   - SecurityFirearmSpeedLoaderSpecial
+
+- type: loadoutGroup
+  id: ApoiadoresGroup
+  name: loadout-group-apoiadores
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  - FigureLunaraGooben
+  - FigurePodroSilva
+  - FigureWellsChaplon
+  - FigurePhilMal
+  - FigureJaneSmith
+  - FigureRonaldo
+  - FigureGui
+  - FigureLao
+  - FigureLawLaw
