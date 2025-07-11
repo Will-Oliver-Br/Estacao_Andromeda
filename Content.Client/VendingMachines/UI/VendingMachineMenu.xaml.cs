@@ -115,6 +115,8 @@ namespace Content.Client.VendingMachines.UI
             };
             var vendComp = _entityManager.GetComponent<VendingMachineComponent>(entityUid); //ADT-Economy
             //ADT-Economy-End
+
+            if (inventory.Count == 0)
             {
                 SearchBar.Visible = false;
                 VendingContents.Visible = false;
@@ -145,6 +147,7 @@ namespace Content.Client.VendingMachines.UI
                 if (!_prototypeManager.TryIndex(entry.ID, out var prototype))
                 {
                     continue;
+                }
 
                 if (!_dummies.TryGetValue(entry.ID, out var dummy))
                 {
@@ -164,7 +167,7 @@ namespace Content.Client.VendingMachines.UI
                     price = 0;
                     PriceMultiplier = 0;
                 }
-                //ADT-Economy-Start
+                //ADT-Economy-End
 
                 var itemName = Identity.Name(dummy, _entityManager);
                 var itemText = $" [{entry.Amount}] {itemName}";
@@ -179,7 +182,6 @@ namespace Content.Client.VendingMachines.UI
 
             SetSizeAfterUpdate(longestEntry.Length, inventory.Count);
         }
-        #endregion
 
         private void SetSizeAfterUpdate(int longestEntryLength, int contentCount)
         {
@@ -187,8 +189,6 @@ namespace Content.Client.VendingMachines.UI
                 Math.Clamp(contentCount * 50, 150, 350));
         }
     }
-}
 
+    public record VendorItemsListData(EntProtoId ItemProtoID, string ItemText, int ItemIndex, VendingMachineInventoryEntry Entry) : ListData; // ADT vending eject count tweaked
 }
-
-public record VendorItemsListData(EntProtoId ItemProtoID, string ItemText, int ItemIndex, VendingMachineInventoryEntry Entry) : ListData; // ADT vending eject count tweaked
