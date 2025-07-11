@@ -15,6 +15,33 @@
 
 - type: entity
   parent: ClothingUnderShirtBase
+  id: ClothingUnderbraStorageBase
+  name: BraStorageBase
+  description: "Storage for your bras."
+  components:
+    - type: Sprite
+      sprite: SimpleStation14/Clothing/Under/undershirts.rsi
+      state: bra-ICON
+    - type: Clothing
+      sprite: SimpleStation14/Clothing/Under/undershirts.rsi
+      clothingVisuals:
+        undershirt:
+          - state: bra
+    - type: Storage
+      grid:
+        - 0,0,1,1
+      maxItemSize: Tiny
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          ents: []
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+
+- type: entity
+  parent: ClothingUnderShirtBase
   id: ClothingUnderbabydoll
   name: babydoll shirt
   description: "A babydoll shirt, perfect for feeling flirty and fabulous."
@@ -134,7 +161,7 @@
           - state: bowlingw
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_alt
   name: bra
   description: "A basic bra, providing comfort and support for everyday wear."
@@ -151,7 +178,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_assblastusa
   name: american flag bra
   description: "An American flag bra, perfect for patriotic occasions."
@@ -168,7 +195,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_bee-kini
   name: bee-kini bra
   description: "A bra with a little sting-er."
@@ -185,7 +212,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_binder_strapless
   name: strapless binder bra
   description: "A bra for keeping your chest in check."
@@ -202,7 +229,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_binder
   name: binder bra
   description: "A strapless bra, for those who like to keep it simple."
@@ -219,7 +246,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_commie
   name: commie bra
   description: "A bra for the socialist in all of us."
@@ -236,7 +263,7 @@
       coefficient: 0.85
 
 # - type: entity
-#   parent: ClothingUnderShirtBase
+#   parent: ClothingUnderbraStorageBase
 #   id: ClothingUnderbra_kinky
 #   name: kinky bra
 #   components:
@@ -250,7 +277,7 @@
 #           - state: bra_kinky
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_neko
   name: neko bra
   description: "A cat-themed bra, for the cat-lovers out there."
@@ -267,7 +294,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_strapless_alt
   name: strapless bra
   description: "A strapless bra, for the daring and bold."
@@ -284,7 +311,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_strapless
   name: strapless bra
   description: "A strapless bra, for the daring and bold."
@@ -301,7 +328,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_swimming_alt
   name: swimming bra
   description: "A comfortable bra, perfect for pool-parties."
@@ -318,7 +345,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_swimming
   name: swimming bra
   description: "A serious swimwear bra, for those who take their swimwear seriously."
@@ -335,7 +362,7 @@
       coefficient: 0.85
 
 # - type: entity
-#   parent: ClothingUnderShirtBase
+#   parent: ClothingUnderbraStorageBase
 #   id: ClothingUnderbra_thin
 #   name: thin bra
 #   components:
@@ -349,7 +376,7 @@
 #           - state: bra_thin
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra_uk
   name: union jack bra
   description: "A patriotic and royalist-themed bra."
@@ -366,7 +393,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderbra
   name: bra
   description: "A bra providing a little lift."
@@ -560,7 +587,7 @@
           - state: greenshirtsport
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderhalterneck_bra
   name: halterneck bra
   description: "A daring halterneck bra, perfect for parties."
@@ -982,7 +1009,7 @@
           - state: shortsleeve
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUndersports_bra_alt
   name: sports bra
   description: "A shirt suitable for high-intensity activities."
@@ -999,7 +1026,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUndersports_bra
   name: sports bra
   description: "An undershirt for staying cool and dry during a workout."
@@ -1016,7 +1043,7 @@
       coefficient: 0.85
 
 - type: entity
-  parent: ClothingUnderShirtBase
+  parent: ClothingUnderbraStorageBase
   id: ClothingUnderstriped_bra
   name: striped bra
   description: "A sleek and stylish undergarment."

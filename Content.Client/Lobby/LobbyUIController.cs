@@ -165,7 +165,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         var (characterGui, profileEditor) = EnsureGui();
         characterGui.ReloadCharacterPickers();
         profileEditor.SetProfile(
-            (HumanoidCharacterProfile?) _preferencesManager.Preferences?.SelectedCharacter,
+            (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter,
             _preferencesManager.Preferences?.SelectedCharacterIndex);
     }
 
@@ -334,13 +334,20 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     public void GiveDummyJobClothesLoadout(EntityUid dummy, JobPrototype? jobProto, HumanoidCharacterProfile profile)
     {
         var job = jobProto ?? GetPreferredJob(profile);
-        GiveDummyJobClothes(dummy, profile, job);
 
+        RoleLoadout? roleLoadout = null;
         if (_prototypeManager.HasIndex<RoleLoadoutPrototype>(LoadoutSystem.GetJobPrototype(job.ID)))
         {
-            var loadout = profile.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, profile.Species, EntityManager, _prototypeManager);
-            GiveDummyLoadout(dummy, loadout);
+            roleLoadout = profile.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, profile.Species, EntityManager, _prototypeManager);
         }
+
+        // Garante a ordem de aplicação correta para o layering:
+        // 1. Roupas de baixo (do loadout)
+        GiveDummyLoadout(dummy, roleLoadout, false);
+        // 2. Uniforme (da definição do Job)
+        GiveDummyJobClothes(dummy, profile, job);
+        // 3. Roupas de cima (do loadout)
+        GiveDummyLoadout(dummy, roleLoadout, true);
     }
 
     /// <summary>
@@ -353,19 +360,43 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         return _prototypeManager.Index<JobPrototype>(highPriorityJob.Id ?? SharedGameTicker.FallbackOverflowJob);
     }
 
-    public void GiveDummyLoadout(EntityUid uid, RoleLoadout? roleLoadout)
+    public void GiveDummyLoadout(EntityUid uid, RoleLoadout? roleLoadout, bool outerwear)
     {
         if (roleLoadout == null)
             return;
+
+        // Sunrtise-Start
+        var undervearSlots = new List<string> { "undershirt", "underpants", "socks" };
+        // Sunrtise-End
 
         foreach (var group in roleLoadout.SelectedLoadouts.Values)
         {
             foreach (var loadout in group)
             {
+                var wear = true; // Sunrtise-Edit
                 if (!_prototypeManager.TryIndex(loadout.Prototype, out var loadoutProto))
                     continue;
 
-                _spawn.EquipStartingGear(uid, loadoutProto);
+                // Sunrtise-Start
+                // Verifica se o loadout é composto exclusivamente por roupas de baixo.
+                bool isPureUnderwear = loadoutProto.Equipment.Any() && loadoutProto.Equipment.Keys.All(s => undervearSlots.Contains(s));
+
+                if (outerwear)
+                {
+                    // Se estamos na passagem de "outerwear" (roupas de cima), não devemos vestir loadouts que são apenas de roupa de baixo.
+                    if (isPureUnderwear)
+                        wear = false;
+                }
+                else
+                {
+                    // Se estamos na passagem de "underwear" (roupas de baixo), SÓ devemos vestir loadouts que são de roupa de baixo.
+                    if (!isPureUnderwear)
+                        wear = false;
+                }
+
+                if (wear)
+                    _spawn.EquipStartingGear(uid, loadoutProto);
+                // Sunrtise-End
             }
         }
     }
@@ -394,7 +425,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
                         // Try startinggear first
                         if (_prototypeManager.TryIndex(loadoutProto.StartingGear, out var loadoutGear))
                         {
-                            var itemType = ((IEquipmentLoadout) loadoutGear).GetGear(slot.Name);
+                            var itemType = ((IEquipmentLoadout)loadoutGear).GetGear(slot.Name);
 
                             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
                             {
@@ -409,7 +440,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
                         }
                         else
                         {
-                            var itemType = ((IEquipmentLoadout) loadoutProto).GetGear(slot.Name);
+                            var itemType = ((IEquipmentLoadout)loadoutProto).GetGear(slot.Name);
 
                             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
                             {
@@ -432,7 +463,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
 
         foreach (var slot in slots)
         {
-            var itemType = ((IEquipmentLoadout) gear).GetGear(slot.Name);
+            var itemType = ((IEquipmentLoadout)gear).GetGear(slot.Name);
 
             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
             {
@@ -480,16 +511,25 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
 
         _humanoid.LoadProfile(dummyEnt, humanoid);
 
-        if (humanoid != null && jobClothes)
+        if (humanoid != null)
         {
             DebugTools.Assert(job != null);
 
-            GiveDummyJobClothes(dummyEnt, humanoid, job);
-
+            RoleLoadout? roleLoadout = null;
             if (_prototypeManager.HasIndex<RoleLoadoutPrototype>(LoadoutSystem.GetJobPrototype(job.ID)))
             {
-                var loadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
-                GiveDummyLoadout(dummyEnt, loadout);
+                roleLoadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
+            }
+
+            // Aplica as roupas de baixo primeiro para garantir o layering correto.
+            GiveDummyLoadout(dummyEnt, roleLoadout, false); // Passagem de roupas de baixo
+                                                            // Em seguida, aplica o uniforme do trabalho por cima.
+            GiveDummyJobClothes(dummyEnt, humanoid, job);
+
+            if (jobClothes)
+            {
+                // Se jobClothes for true, aplica o restante do loadout (roupas de cima).
+                GiveDummyLoadout(dummyEnt, roleLoadout, true); // Passagem de roupas de cima
             }
         }
 

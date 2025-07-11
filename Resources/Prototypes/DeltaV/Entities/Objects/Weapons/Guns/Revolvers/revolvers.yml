@@ -1,0 +1,49 @@
+- type: entity
+  name: k-38 masterpiece
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverK38Master
+  description: A classic, if not outdated, law enforcement firearm. Uses .38 special ammo.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 2
+    availableModes:
+    - SemiAuto
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeSpecial
+        - SpeedLoaderSpecial
+    proto: CartridgeSpecial
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: fitz special
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverFitz
+  description: A compact and concealable self defence snub revolver. Uses .38 special ammo.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/fitz.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/fitz.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 1.75
+    availableModes:
+    - SemiAuto
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeSpecial
+        - SpeedLoaderSpecial
+    proto: CartridgeSpecial
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]

@@ -1045,6 +1045,12 @@
   - HeadofSecurityTurtleneckSkirt
   - HeadofSecurityFormalSuit
   - HeadofSecurityFormalSkirt
+  # Begin DeltaV changes
+  - HeadofSecurityJumpsuitGrey
+  - HeadofSecurityJumpskirtGrey
+  - HeadofSecurityJumpsuitBlue
+  - HeadofSecurityJumpskirtBlue
+  # End DeltaV changes
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
@@ -1061,6 +1067,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - StasecWinterCoatHoS # DeltaV
 
 - type: loadoutGroup
   id: WardenHead
@@ -1076,6 +1083,14 @@
   loadouts:
   - WardenJumpsuit
   - WardenJumpskirt
+  # Begin DeltaV additions
+  - WardenJumpsuitGrey
+  - WardenJumpskirtGrey
+  - WardenJumpsuitBlue
+  - WardenJumpskirtBlue
+  - WardenTurtlesuit
+  - WardenTurtleskirt
+  # End DeltaV additions
 
 - type: loadoutGroup
   id: WardenNeck
@@ -1090,6 +1105,7 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - StasecWinterCoatWarden # DeltaV
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1117,8 +1133,12 @@
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
-  - SeniorOfficerJumpsuit
-  - SeniorOfficerJumpskirt
+  - SecurityJumpsuitBlue
+  - SecurityJumpskirtBlue
+  - SeniorSecOfficerTurtlesuit
+  - SeniorSecOfficerTurtleskirt
+  - SeniorSecOfficerJumpsuit
+  - SeniorSecOfficerJumpskirt
   - TrooperUniform
 
 - type: loadoutGroup
@@ -1142,6 +1162,8 @@
   minLimit: 0
   loadouts:
   - Bodycam # Goobstation - Body cameras
+  - ScarfRed # DeltaV
+  - SecurityPoncho #DeltaV
 
 - type: loadoutGroup
   id: SecurityOuterClothing
@@ -1150,6 +1172,8 @@
   - ArmorVest
   - ArmorVestSlim
   - SecurityOfficerWintercoat
+  - StasecSweater # DeltaV
+  - StasecWinterCoat # DeltaV
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1202,6 +1226,8 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - StasecWinterCoatDet # DeltaV
+  - DetPlatedCoat # DeltaV
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit

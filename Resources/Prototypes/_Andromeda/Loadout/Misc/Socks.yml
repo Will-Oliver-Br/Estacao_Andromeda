@@ -1,0 +1,148 @@
+- type: loadout
+  id: AmericanFlagKnee
+  equipment:
+    socks: ClothingUnderAssBlastUSA_knee
+- type: loadout
+  id: AmericanFlagThigh
+  equipment:
+    socks: ClothingUnderAssBlastUSA_thigh
+- type: loadout
+  id: BeeKnee
+  equipment:
+    socks: ClothingUnderBee_knee
+- type: loadout
+  id: BeeSocks
+  equipment:
+    socks: ClothingUnderBee_norm
+- type: loadout
+  id: BeeThigh
+  equipment:
+    socks: ClothingUnderBee_thigh
+- type: loadout
+  id: GreenStripedKnee
+  equipment:
+    socks: ClothingUnderCandyCaneg_knee
+- type: loadout
+  id: GreenStripedSocks
+  equipment:
+    socks: ClothingUnderCandyCaneg_norm
+- type: loadout
+  id: GreenStripedThigh
+  equipment:
+    socks: ClothingUnderCandyCaneg_thigh
+- type: loadout
+  id: RedStripedKnee
+  equipment:
+    socks: ClothingUnderCandyCaner_knee
+- type: loadout
+  id: RedStripedSocks
+  equipment:
+    socks: ClothingUnderCandyCaner_norm
+- type: loadout
+  id: RedStripedThigh
+  equipment:
+    socks: ClothingUnderCandyCaner_thigh
+- type: loadout
+  id: ChristmasKnee
+  equipment:
+    socks: ClothingUnderChristmas_knee
+- type: loadout
+  id: ChristmasSocks
+  equipment:
+    socks: ClothingUnderChristmas_norm
+- type: loadout
+  id: ChristmasThigh
+  equipment:
+    socks: ClothingUnderChristmas_thigh
+- type: loadout
+  id: CommieKnee
+  equipment:
+    socks: ClothingUnderCommie_knee
+- type: loadout
+  id: CommieThigh
+  equipment:
+    socks: ClothingUnderCommie_thigh
+- type: loadout
+  id: Garter
+  equipment:
+    socks: ClothingUnderGarter
+- type: loadout
+  id: RainbowKnee
+  equipment:
+    socks: ClothingUnderRainbow_knee
+- type: loadout
+  id: RainbowThigh
+  equipment:
+    socks: ClothingUnderRainbow_thigh
+- type: loadout
+  id: SocksKneeUncolored
+  equipment:
+    socks: ClothingUnderSocks_knee
+- type: loadout
+  id: SocksNormUncolored
+  equipment:
+    socks: ClothingUnderSocks_norm
+- type: loadout
+  id: SocksShortUncolored
+  equipment:
+    socks: ClothingUnderSocks_short
+- type: loadout
+  id: SocksThighUncolored
+  equipment:
+    socks: ClothingUnderSocks_thigh
+- type: loadout
+  id: BlueThighHighs
+  equipment:
+    socks: ClothingUnderStockings_blue
+- type: loadout
+  id: CyanThighHighs
+  equipment:
+    socks: ClothingUnderStockings_cyan
+- type: loadout
+  id: DarkPinkThighHighs
+  equipment:
+    socks: ClothingUnderStockings_dpink
+- type: loadout
+  id: GreenThighHighs
+  equipment:
+    socks: ClothingUnderStockings_green
+- type: loadout
+  id: LightPinkThighHighs
+  equipment:
+    socks: ClothingUnderStockings_lpink
+- type: loadout
+  id: OrangeThighHighs
+  equipment:
+    socks: ClothingUnderStockings_orange
+- type: loadout
+  id: PurpleThighHighs
+  equipment:
+    socks: ClothingUnderStockings_purple
+- type: loadout
+  id: YellowThighHighs
+  equipment:
+    socks: ClothingUnderStockings_yellow
+- type: loadout
+  id: StripedKneeUncolored
+  equipment:
+    socks: ClothingUnderStriped_knee
+- type: loadout
+  id: StripedThighUncolored
+  equipment:
+    socks: ClothingUnderStriped_thigh
+- type: loadout
+  id: ThinKnee
+  equipment:
+    socks: ClothingUnderThin_knee
+- type: loadout
+  id: ThinThigh
+  equipment:
+    socks: ClothingUnderThin_thigh
+- type: loadout
+  id: UKKnee
+  equipment:
+    socks: ClothingUnderUK_knee
+- type: loadout
+  id: UKThigh
+  equipment:
+    socks: ClothingUnderUK_thigh

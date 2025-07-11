@@ -17,22 +17,13 @@
             "name": "pda-security"
         },
         {
-            "name": "pda-brigmedic"
-        },
-        {
             "name": "pda-warden"
-        },
-        {
-            "name": "pda-seniorphysician"
         },
         {
             "name": "pda-seniorofficer"
         },
         {
             "name": "pda-corpsman"
-        },
-        {
-            "name": "pda-prisonguard"
         }
     ]
 }

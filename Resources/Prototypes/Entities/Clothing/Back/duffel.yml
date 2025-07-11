@@ -70,6 +70,7 @@
   description: A large duffel bag for holding extra security related goods.
   components:
     - type: Sprite
+      sprite: _DV/Clothing/Back/Duffels/security.rsi # DeltaV - resprite security duffel bags
 
 - type: entity
   parent: [ClothingBackpackDuffel, BaseSecurityContraband]

@@ -1,0 +1,64 @@
+- type: loadout
+  id: SecurityPoncho
+  equipment:
+    neck: ClothingNeckCWPSec
+
+- type: loadout
+  id: ScarfRed
+  equipment:
+    neck: ClothingNeckScarfStripedRed
+
+- type: loadout
+  id: StasecSweater
+  equipment:
+    outerClothing: ClothingOuterStasecSweater
+
+- type: loadout
+  id: StasecWinterCoat
+  equipment:
+    outerClothing: ClothingOuterCoatStasec
+
+# Jumpsuit
+
+- type: loadout
+  id: SecurityJumpsuitBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlue
+
+- type: loadout
+  id: SecurityJumpskirtBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecBlue
+
+- type: loadout
+  id: SeniorSecOfficerJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecSenior
+
+- type: loadout
+  id: SeniorSecOfficerJumpskirt
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecSenior
+
+- type: loadout
+  id: SeniorSecOfficerTurtlesuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecTurtle
+
+- type: loadout
+  id: SeniorSecOfficerTurtleskirt
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecTurtle
+
