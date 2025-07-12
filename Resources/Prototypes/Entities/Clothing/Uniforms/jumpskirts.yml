@@ -399,13 +399,11 @@
         color: "#C12D30"
         sprite: Clothing/Uniforms/Jumpskirt/color.rsi
       - state: overlay-inhand-left
-        sprite: Clothing/Uniforms/Jumpsuit/security.rsi
       right:
       - state: inhand-right
         color: "#C12D30"
         sprite: Clothing/Uniforms/Jumpskirt/color.rsi
       - state: overlay-inhand-right
-        sprite: Clothing/Uniforms/Jumpsuit/security.rsi
 
 
 - type: entity
