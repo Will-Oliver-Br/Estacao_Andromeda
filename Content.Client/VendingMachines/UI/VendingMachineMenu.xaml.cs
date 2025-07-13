@@ -74,7 +74,7 @@ namespace Content.Client.VendingMachines.UI
             var item = new VendingMachineItem(protoID, text);
             if (entry.Amount <= 0)
             {
-                item.Count.AddItem("Нет", 0);
+                item.Count.AddItem("Esgotado", 0);
             }
             else
             {
@@ -84,7 +84,7 @@ namespace Content.Client.VendingMachines.UI
                     var price = (int)(entry.Price * PriceMultiplier);
                     var priceStr = price > 0 ? $" [{price * amount}$]" : "";
 
-                    item.Count.AddItem($"{amount} шт." + priceStr, i);
+                    item.Count.AddItem($"{amount} U." + priceStr, i);
                 }
             }
             item.Count.Select(0);
