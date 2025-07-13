@@ -1,2 +1,2 @@
-command-budget = Бюджет командования
-command-budget-pin-message = PIN-код станционного бюджета: { $pin }. Постарайтесь сохранить его в тайне до прилёта на станцию центрального командования.
+command-budget = Orçamento de Comando
+command-budget-pin-message = PIN do orçamento da estação: { $pin }. Mantenha-o em sigilo até a chegada do Comando Central.

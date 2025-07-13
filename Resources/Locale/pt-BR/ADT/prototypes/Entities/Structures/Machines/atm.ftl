@@ -1,2 +1,2 @@
-ent-ADTATM = банкомат
-    .desc = Величайшее достижение экономики. С помощью данного аппарата можно снимать деньги или же наоборот внести какую-то сумму на свой виртуальный кошелёк.
+ent-ADTATM = caixa eletrônico
+    .desc = A maior conquista da economia. Com este aparelho você pode sacar dinheiro ou depositar valores na sua carteira virtual.

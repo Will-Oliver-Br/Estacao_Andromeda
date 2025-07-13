@@ -1,2 +1,2 @@
-character-info-memories-label = Память
-character-info-memories-account-number = Аккаунт №
+character-info-memories-label = Memória
+character-info-memories-account-number = Conta nº

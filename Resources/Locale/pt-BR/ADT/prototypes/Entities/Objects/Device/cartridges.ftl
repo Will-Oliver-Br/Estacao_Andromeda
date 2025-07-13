@@ -1,2 +1,2 @@
-ent-ADTWalletCartridge = картридж виртуального кошелька
-    .desc = Программа для управления банковским аккаунтом.
+ent-ADTWalletCartridge = cartucho de carteira virtual
+    .desc = Programa para gerenciar contas bancárias.

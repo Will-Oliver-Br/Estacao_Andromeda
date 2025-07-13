@@ -1,1 +1,1 @@
-salary-pay-announcement = Внимание! Наши автоматизированные системы передают сигнал, полученный от Центрального командования. Согласно нашему трудовому догову, экипажу станции была выплачена заработная плата.
+salary-pay-announcement = Atenção! Nossos sistemas automatizados transmitem um sinal recebido do Comando Central. Conforme nosso contrato de trabalho, o salário da tripulação da estação foi pago.

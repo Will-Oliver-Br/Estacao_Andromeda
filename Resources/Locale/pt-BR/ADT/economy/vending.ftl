@@ -1,2 +1,2 @@
-vending-ui-credits-amount = Кредитов в автомате: { $credits }
-vending-machine-component-no-balance = Недостаточно средств.
+vending-ui-credits-amount = Créditos disponíveis: { $credits }
+vending-machine-component-no-balance = Saldo insuficiente.

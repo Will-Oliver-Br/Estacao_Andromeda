@@ -1,14 +1,14 @@
-bank-program-ui-no-account = [color=red]Аккаунт не привязан.[/color]
-bank-program-name = Виртуальный кошелёк
-bank-program-ui-link-account = Привязать аккаунт
-bank-program-ui-account-number = Номер аккаунта
-bank-program-ui-link-confirm = Привязать
-bank-program-ui-link-cancel = Отмена
-bank-program-ui-account-number-text = Аккаунт №{ $account }
-bank-program-ui-account-owner-text = Владелец аккаунта: { $owner }
-bank-program-ui-link-error = [color=red]Ошибка привязки аккаунта.[/color]
-bank-program-ui-link-success = [color=green]Аккаунт успешно привязан.[/color]
-bank-program-ui-link-program = Аккаунт будет привязан к приложению.
-bank-program-ui-link-id-card = Аккаунт будет привязан к ID карте.
-bank-program-ui-link-no-id-card = [color=red]ID карта отсутствует.[/color]
-bank-program-ui-link-id-card-linked = [color=red]К ID карте уже привязан аккаунт: { $account }[/color]
+bank-program-ui-no-account = [color=red]Conta não vinculada.[/color]
+bank-program-name = Carteira Virtual
+bank-program-ui-link-account = Vincular conta
+bank-program-ui-account-number = Número da conta
+bank-program-ui-link-confirm = Vincular
+bank-program-ui-link-cancel = Cancelar
+bank-program-ui-account-number-text = Conta nº{ $account }
+bank-program-ui-account-owner-text = Titular da conta: { $owner }
+bank-program-ui-link-error = [color=red]Erro ao vincular conta.[/color]
+bank-program-ui-link-success = [color=green]Conta vinculada com sucesso.[/color]
+bank-program-ui-link-program = A conta será vinculada ao aplicativo.
+bank-program-ui-link-id-card = A conta será vinculada ao cartão de identificação.
+bank-program-ui-link-no-id-card = [color=red]Cartão de ID ausente.[/color]
+bank-program-ui-link-id-card-linked = [color=red]Este cartão de ID já está vinculado à conta: { $account }[/color]
