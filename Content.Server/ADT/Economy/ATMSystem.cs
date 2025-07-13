@@ -61,15 +61,21 @@ public sealed class ATMSystem : SharedATMSystem
             return;
         }
 
-        var stack = Comp<StackComponent>(args.Used);
-        var bankCard = Comp<BankCardComponent>(component.CardSlot.Item.Value);
-        var amount = stack.Count;
+        if (!TryComp<StackComponent>(args.Used, out var stack) || !TryComp<BankCardComponent>(component.CardSlot.Item.Value, out var bankCard) || !bankCard.AccountId.HasValue)
+        {
+            return;
+        }
 
-        _bankCardSystem.TryChangeBalance(bankCard.AccountId!.Value, amount);
+        var amount = stack.Count;
+        var accountId = bankCard.AccountId.Value;
+
         Del(args.Used);
 
+        _bankCardSystem.TryChangeBalance(accountId, amount);
         _audioSystem.PlayPvs(component.SoundInsertCurrency, uid);
-        UpdateUiState(uid, _bankCardSystem.GetBalance(bankCard.AccountId.Value), true, Loc.GetString("atm-ui-select-withdraw-amount"));
+
+        UpdateUiState(uid, _bankCardSystem.GetBalance(accountId), true, Loc.GetString("atm-ui-select-withdraw-amount"));
+        args.Handled = true;
     }
 
     private void OnCardInserted(EntityUid uid, ATMComponent component, EntInsertedIntoContainerMessage args)
