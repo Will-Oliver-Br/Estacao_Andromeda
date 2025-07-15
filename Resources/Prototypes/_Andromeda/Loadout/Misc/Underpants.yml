@@ -1,0 +1,94 @@
+#Pants
+
+- type: loadout
+  id: BeeShorts
+  equipment:
+    underpants: ClothingUnderbee_shorts
+- type: loadout
+  id: BoxerBriefs
+  equipment:
+    underpants: ClothingUnderboxer_briefs
+- type: loadout
+  id: AmericanFlagBoxers
+  equipment:
+    underpants: ClothingUnderboxers_assblastusa
+- type: loadout
+  id: CommieBoxers
+  equipment:
+    underpants: ClothingUnderboxers_commie
+- type: loadout
+  id: HeartBoxers
+  equipment:
+    underpants: ClothingUnderboxers_heart
+- type: loadout
+  id: StripedBoxers
+  equipment:
+    underpants: ClothingUnderboxers_striped
+- type: loadout
+  id: UKBoxers
+  equipment:
+    underpants: ClothingUnderboxers_uk
+- type: loadout
+  id: Boxers
+  equipment:
+    underpants: ClothingUnderboxers
+- type: loadout
+  id: Briefs
+  equipment:
+    underpants: ClothingUnderbriefs
+- type: loadout
+  id: Jockstrap
+  equipment:
+    underpants: ClothingUnderjockstrap
+- type: loadout
+  id: LjonbPants
+  equipment:
+    underpants: ClothingUnderljonb
+- type: loadout
+  id: PantiesAlt
+  equipment:
+    underpants: ClothingUnderpanties_alt
+- type: loadout
+  id: AmericanFlagPanties
+  equipment:
+    underpants: ClothingUnderpanties_assblastusa
+- type: loadout
+  id: BeeKiniPanties
+  equipment:
+    underpants: ClothingUnderpanties_bee-kini
+- type: loadout
+  id: CommiePanties
+  equipment:
+    underpants: ClothingUnderpanties_commie
+- type: loadout
+  id: NekoPanties
+  equipment:
+    underpants: ClothingUnderpanties_neko
+- type: loadout
+  id: SlimPanties
+  equipment:
+    underpants: ClothingUnderpanties_slim
+- type: loadout
+  id: SwimmingPanties
+  equipment:
+    underpants: ClothingUnderpanties_swimming
+- type: loadout
+  id: UnionJackPanties
+  equipment:
+    underpants: ClothingUnderpanties_uk
+- type: loadout
+  id: Panties
+  equipment:
+    underpants: ClothingUnderpanties
+- type: loadout
+  id: Pantyhose
+  equipment:
+    underpants: ClothingUnderpantyhose
+- type: loadout
+  id: StripedPanties
+  equipment:
+    underpants: ClothingUnderstriped_panties
+- type: loadout
+  id: Thong
+  equipment:
+    underpants: ClothingUnderthong

@@ -1,7 +1,7 @@
 - type: species
   id: Gingerbread
   name: Gingerbread
-  roundStart: true
+  roundStart: false # Andromeda - Porque caralhos isso seria roundStart?
   prototype: MobGingerbread
   sprites: MobGingerbreadSprites
   markingLimits: MobGingerbreadMarkingLimits

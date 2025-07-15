@@ -33,11 +33,24 @@
   equipment:
     head: ClothingHeadHatSyndieMAA
 
+- type: loadout
+  id: NanotrasenRepresentativeCap #niconico cuti cuti
+  equipment:
+    head: ClothingHeadHatNTRCap
+
 # Neck
 - type: loadout
   id: NanotrasenRepresentativeMantle
   equipment:
     neck: ClothingNeckMantleNTR
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorNanotrasenRepresentative
+
+- type: loadout
+  id: CloakNanotrasenRepresentative #niconico cuti cuti
+  equipment:
+    neck: ClothingNeckCloaksNTR
   effects:
   - !type:GroupLoadoutEffect
     proto: SeniorNanotrasenRepresentative

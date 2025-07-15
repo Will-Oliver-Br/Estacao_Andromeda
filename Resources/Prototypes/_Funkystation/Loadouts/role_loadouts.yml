@@ -13,6 +13,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - ApoiadoresGroup
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -24,4 +25,16 @@
   - InternalAffairsAgentBelt
   - Survival
   - Trinkets
+  - ApoiadoresGroup
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobMagistrate
+  groups:
+  - MagistrateJumpsuit
+  - MagistrateBackpack
+  - MagistrateFlavor
+  - Survival
+  - Trinkets
+  - ApoiadoresGroup
   - GroupSpeciesBreathTool

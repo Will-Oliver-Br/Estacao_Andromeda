@@ -32,10 +32,10 @@
   equipment:
   # eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
-    pocket1: WeaponPistolMk58
+    #pocket1: WeaponPistolMk58 # Andromeda
   storage:
     back:
     - Flash
-    - MagazinePistol
+    #- MagazinePistol # Andromeda
     - SecHypo # Goobstation
     - CartridgeEmergency

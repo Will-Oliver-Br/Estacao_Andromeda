@@ -220,6 +220,9 @@
   id: CaptainSabre
 
 - type: Tag
+  id: CartridgeSpecial
+
+- type: Tag
   id: Carpet
 
 - type: Tag
@@ -1226,6 +1229,9 @@
 
 - type: Tag
   id: SpeedLoaderRifle
+
+- type: Tag
+  id: SpeedLoaderSpecial
 
 - type: Tag
   id: SpiderCraft

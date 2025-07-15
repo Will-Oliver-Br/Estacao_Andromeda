@@ -1,0 +1,59 @@
+- type: loadout
+  id: FigureLunaraGooben
+  storage:
+    back:
+    - ToyFigurineLunaraGooben
+
+- type: loadout
+  id: FigurePodroSilva
+  storage:
+    back:
+    - ToyFigurinePodroSilva
+
+- type: loadout
+  id: FigureWellsChaplon
+  storage:
+    back:
+    - ToyFigurineWellsChaplon
+
+- type: loadout
+  id: FigurePhilMal
+  storage:
+    back:
+    - ToyFigurinePhilMal
+
+- type: loadout
+  id: FigureJaneSmith
+  storage:
+    back:
+    - ToyFigurineJanieSmith
+
+- type: loadout
+  id: FigureRonaldo
+  storage:
+    back:
+    - ToyFigurineRonaldo
+
+- type: loadout
+  id: FigureGui
+  storage:
+    back:
+    - ToyFigurineGui
+
+- type: loadout
+  id: FigureLao
+  storage:
+    back:
+    - ToyFigurineLao
+
+- type: loadout
+  id: FigureLawLaw
+  storage:
+    back:
+    - ToyFigurineLawLaw
+
+#- type: loadout
+#  id: FigureMarcos
+#    storage:
+#    back:
+  #    - ToyFigurineMarcos

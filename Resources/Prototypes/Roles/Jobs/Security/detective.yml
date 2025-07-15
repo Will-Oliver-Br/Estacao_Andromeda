@@ -32,7 +32,7 @@
     #eyes: ClothingEyesGlassesSecurity
     id: DetectivePDA
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
-    belt: ClothingBeltHolsterFilled
+    belt: ClothingBeltHolster #Andromeda
   storage:
     back:
     - Flash

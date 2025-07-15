@@ -5,12 +5,11 @@
   speciesRestriction: [Human, Dwarf, Felinid] # Delta V - Felinid
   coloring:
     default:
-      type:
-        !type:TattooColoring
+      type: !type:TattooColoring
       fallbackColor: "#666666"
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_hive_chest
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_hive_chest
 
 - type: marking
   id: TattooNightlingChest
@@ -19,12 +18,11 @@
   speciesRestriction: [Human, Dwarf, Felinid] # Delta V - Felinid
   coloring:
     default:
-      type:
-        !type:TattooColoring
+      type: !type:TattooColoring
       fallbackColor: "#666666"
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_nightling
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_nightling
 
 - type: marking
   id: TattooSilverburghLeftLeg
@@ -33,12 +31,11 @@
   speciesRestriction: [Human, Dwarf, Felinid] # Delta V - Felinid
   coloring:
     default:
-      type:
-        !type:TattooColoring
+      type: !type:TattooColoring
       fallbackColor: "#666666"
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_silverburgh_l_leg
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_silverburgh_l_leg
 
 - type: marking
   id: TattooSilverburghRightLeg
@@ -47,12 +44,11 @@
   speciesRestriction: [Human, Dwarf, Felinid] # Delta V - Felinid
   coloring:
     default:
-      type:
-        !type:TattooColoring
+      type: !type:TattooColoring
       fallbackColor: "#666666"
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_silverburgh_r_leg
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_silverburgh_r_leg
 
 - type: marking
   id: TattooCampbellLeftArm
@@ -61,12 +57,11 @@
   speciesRestriction: [Human, Dwarf, Felinid] # Delta V - Felinid
   coloring:
     default:
-      type:
-        !type:TattooColoring
+      type: !type:TattooColoring
       fallbackColor: "#666666"
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_campbell_l_arm
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_campbell_l_arm
 
 - type: marking
   id: TattooCampbellRightArm
@@ -75,12 +70,11 @@
   speciesRestriction: [Human, Dwarf, Felinid] # Delta V - Felinid
   coloring:
     default:
-      type:
-        !type:TattooColoring
+      type: !type:TattooColoring
       fallbackColor: "#666666"
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_campbell_r_arm
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_campbell_r_arm
 
 - type: marking
   id: TattooCampbellLeftLeg
@@ -89,12 +83,11 @@
   speciesRestriction: [Human, Dwarf, Felinid] # Delta V - Felinid
   coloring:
     default:
-      type:
-        !type:TattooColoring
+      type: !type:TattooColoring
       fallbackColor: "#666666"
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_campbell_l_leg
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_campbell_l_leg
 
 - type: marking
   id: TattooCampbellRightLeg
@@ -103,37 +96,54 @@
   speciesRestriction: [Human, Dwarf, Felinid] # Delta V - Felinid
   coloring:
     default:
-      type:
-        !type:TattooColoring
+      type: !type:TattooColoring
       fallbackColor: "#666666"
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_campbell_r_leg
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_campbell_r_leg
 
 - type: marking
   id: TattooEyeRight
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Felinid, Harpy, Rodentia, Shadowkin] # Delta V - Felinid, Harpy, Rodentia
+  speciesRestriction: [
+      Human,
+      SlimePerson,
+      Reptilian,
+      Dwarf,
+      Felinid,
+      Harpy,
+      Rodentia,
+      Vulpkanin,
+      Shadowkin,
+    ] # Funky - Felinid - Vulpkanin
   coloring:
     default:
-      type:
-        !type:EyeColoring
-          negative: true
+      type: !type:EyeColoring
+        negative: true
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_eye_r
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_eye_r
 
 - type: marking
   id: TattooEyeLeft
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Felinid, Harpy, Rodentia, Shadowkin] # Delta V - Felinid, Harpy, Rodentia
+  speciesRestriction: [
+      Human,
+      SlimePerson,
+      Reptilian,
+      Dwarf,
+      Felinid,
+      Harpy,
+      Rodentia,
+      Vulpkanin,
+      Shadowkin,
+    ] # Funky - Felinid - Vulpkanin
   coloring:
     default:
-      type:
-        !type:EyeColoring
-          negative: true
+      type: !type:EyeColoring
+        negative: true
   sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_eye_l
+    - sprite: Mobs/Customization/tattoos.rsi
+      state: tattoo_eye_l
