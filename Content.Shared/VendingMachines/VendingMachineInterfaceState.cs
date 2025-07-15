@@ -2,24 +2,20 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared.VendingMachines
 {
+    //ADT-Economy-Start
     [NetSerializable, Serializable]
     public sealed class VendingMachineInterfaceState : BoundUserInterfaceState
     {
         public List<VendingMachineInventoryEntry> Inventory;
-        //ADT-Economy-Start
         public double PriceMultiplier;
         public int Credits;
-        //ADT-Economy-End
-        public VendingMachineInterfaceState(List<VendingMachineInventoryEntry> inventory, double priceMultiplier, int credits) //ADT-Economy
+        public VendingMachineInterfaceState(List<VendingMachineInventoryEntry> inventory, double priceMultiplier, int credits)
         {
             Inventory = inventory;
-            //ADT-Economy-Start
             PriceMultiplier = priceMultiplier;
             Credits = credits;
-            //ADT-Economy-End
         }
     }
-    //ADT-Economy-Start
     [Serializable, NetSerializable]
     public sealed class VendingMachineWithdrawMessage : BoundUserInterfaceMessage
     {

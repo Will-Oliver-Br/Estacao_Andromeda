@@ -1,3 +1,4 @@
+<!-- ADT-Economy-Start -->
 <!--ADT - Короче, я слишком сильно перелопатил этот файл, чтобы оставлять комментарии. Вкратце, добавился BoxContainer с содержимым для выбора количества предметов и изменена ориентация основного контейнера на вертикальную.-->
 <BoxContainer xmlns="https://spacestation14.io"
             Orientation="Vertical"
@@ -25,3 +26,4 @@
         <OptionButton Name="Count" MinSize="45 20" Margin="4 4" Access="Public" HorizontalAlignment="Left" />
     </BoxContainer>
 </BoxContainer>
+<!-- ADT-Economy-End -->

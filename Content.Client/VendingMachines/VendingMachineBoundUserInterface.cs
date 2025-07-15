@@ -4,7 +4,6 @@ using Content.Shared.VendingMachines;
 using Robust.Client.UserInterface;
 using Robust.Shared.Input;
 using System.Linq;
-using Content.Client.VendingMachines; // ADT-Economy - Added missing using directive
 
 namespace Content.Client.VendingMachines
 {
@@ -24,18 +23,19 @@ namespace Content.Client.VendingMachines
         {
             base.Open();
 
+            //ADT-Economy-Start
             _menu = new VendingMachineMenu();
+            var component = EntMan.GetComponent<VendingMachineComponent>(Owner);
+            var system = EntMan.System<VendingMachineSystem>();
+            _cachedInventory = system.GetAllInventory(Owner, component);
             _menu.Title = EntMan.GetComponent<MetaDataComponent>(Owner).EntityName;
-            _menu.OnItemCountSelected += OnItemSelected;    // ADT vending eject count
-            Refresh();
-            var component = EntMan.GetComponent<VendingMachineComponent>(Owner); //ADT-Economy
-            var vendingMachineSys = EntMan.System<VendingMachineSystem>(); // ADT-Economy - Fixed system reference
-            _cachedInventory = vendingMachineSys.GetAllInventory(Owner, component); //ADT-Economy
-            _menu.OnClose += Close; //ADT-Economy
-            _menu.OnWithdraw += SendMessage; //ADT-Economy
-
-            _menu.Populate(Owner, _cachedInventory, component.PriceMultiplier, component.Credits); //ADT-Economy - Removed out parameter
+            _menu.OnClose += Close;
+            _menu.OnItemCountSelected += OnItemSelected;
+            _menu.OnWithdraw += SendMessage;
+            _menu.Populate(Owner, _cachedInventory, component.PriceMultiplier, component.Credits);
             _menu.OpenCentered();
+            //ADT-Economy-End
+            Refresh();
         }
 
         public void Refresh()
@@ -53,14 +53,15 @@ namespace Content.Client.VendingMachines
         {
             base.UpdateState(state);
 
+            var system = EntMan.System<VendingMachineSystem>();
+
             if (state is not VendingMachineInterfaceState newState)
                 return;
 
-            _cachedInventory = newState.Inventory;
+            _cachedInventory = system.GetAllInventory(Owner);
 
             _menu?.Populate(Owner, _cachedInventory, newState.PriceMultiplier, newState.Credits); //ADT-Economy-Tweak
         }
-        // END-ADT-TWEAK
 
         private void OnItemSelected(VendingMachineInventoryEntry entry, VendingMachineItem item)
         {

@@ -46,14 +46,14 @@ namespace Content.Server.VendingMachines
         [Dependency] private readonly ThrowingSystem _throwingSystem = default!;
         [Dependency] private readonly IGameTiming _timing = default!;
         [Dependency] private readonly SpeakOnUIClosedSystem _speakOnUIClosed = default!;
+        [Dependency] private readonly SharedPointLightSystem _light = default!;
         //ADT-Economy-Start
         [Dependency] private readonly BankCardSystem _bankCard = default!;
         [Dependency] private readonly TagSystem _tag = default!;
         [Dependency] private readonly StackSystem _stackSystem = default!;
-        //ADT-Economy-End
         [Dependency] private readonly UserInterfaceSystem _userInterfaceSystem = default!;
+        //ADT-Economy-End
         [Dependency] private readonly EmagSystem _emag = default!;
-        [Dependency] private readonly SharedPointLightSystem _light = default!;
 
         private const float WallVendEjectDistanceFromWall = 1f;
 
@@ -121,13 +121,15 @@ namespace Content.Server.VendingMachines
                 args.Cancel();
         }
 
+        //ADT-Economy-Start
         private void UpdateVendingMachineInterfaceState(EntityUid uid, VendingMachineComponent component)
         {
             var state = new VendingMachineInterfaceState(GetAllInventory(uid, component), component.PriceMultiplier,
-                component.Credits); //ADT-Economy
+                component.Credits);
 
             _userInterfaceSystem.SetUiState(uid, VendingMachineUiKey.Key, state);
         }
+        //ADT-Economy-End
 
         private void OnInventoryEjectMessage(EntityUid uid, VendingMachineComponent component, VendingMachineEjectMessage args)
         {
@@ -537,6 +539,8 @@ namespace Content.Server.VendingMachines
             vendComponent.NextItemToEject = null;
             vendComponent.ThrowNextItem = false;
             vendComponent.NextItemCount = 1;    // ADT vending eject count
+
+            UpdateVendingMachineInterfaceState(uid, vendComponent); // ADT vending eject count
         }
 
         private VendingMachineInventoryEntry? GetEntry(EntityUid uid, string entryId, InventoryType type, VendingMachineComponent? component = null)

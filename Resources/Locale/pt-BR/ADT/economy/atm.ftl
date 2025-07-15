@@ -6,4 +6,4 @@ atm-ui-select-withdraw-amount = Selecione o valor do saque.
 atm-ui-insert-card = Insira o cartão.
 atm-ui-balance = Saldo: { $balance }$
 atm-ui-nanotrasen-atm = Caixa Eletrônico Nanotrasen 1.5
-atm-ui-name = Banco
+atm-ui-name = Caixa Eletrônico
